@@ -2,7 +2,7 @@
 
 [Preview presentation](https://jcfranco.github.io/uc-2019-customizing-widgets/slides/#/)
 
-To be presented at [Esri User Conference 2019](http://www.esri.com/events/devsummit).
+To be presented at [Esri User Conference 2019](http://www.esri.com/events/uc).
 
 Presenters: Matt Driscoll, Juan Carlos Franco, Esri
 
