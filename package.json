@@ -6,17 +6,15 @@
     "postinstall": "tsc"
   },
   "dependencies": {
-    "highlightjs": "~9.12.0",
-    "hoek": "~4.2.1",
-    "reveal.js": "~3.8.0"
+    "esri-reveal.js-templates": "git+https://github.com/esri/reveal.js.git"
   },
   "devDependencies": {
-    "@types/arcgis-js-api": "~4.11.0",
-    "dojo-typings": "~1.11.9",
-    "grunt": "~1.0.4",
-    "grunt-sass": "~3.0.2",
-    "prettier": "~1.18.2",
-    "typescript": "~3.5.2"
+    "@types/arcgis-js-api": "4.11.0",
+    "dojo-typings": "1.11.9",
+    "grunt": "1.0.4",
+    "grunt-sass": "3.0.2",
+    "prettier": "1.18.2",
+    "typescript": "3.5.2"
   },
   "prettier": {
     "arrowParens": "always",

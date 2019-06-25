@@ -1,4 +1,4 @@
-<!-- .slide: data-background="img/bg-1.png" -->
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-1.png" -->
 <!-- Presenter: Matt -->
 
 # ArcGIS API for JavaScript: Customizing Widgets
@@ -46,7 +46,7 @@
 
 <h2 class="eight-bit">Theming</h2>
 
-<!-- .slide: data-background="img/bg-4.png" -->
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" -->
 
 ---
 
@@ -221,7 +221,7 @@ $background_color : #cc4b09;
 
 # So let's make a theme!
 
-<!-- .slide: data-background="img/bg-5.png" -->
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-5.png" -->
 
 ---
 
@@ -243,7 +243,7 @@ $background_color : #cc4b09;
 
 <h2 class="eight-bit">Ready?</h2>
 
-<!-- .slide: data-background="img/bg-4.png" -->
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" -->
 
 ---
 
@@ -254,7 +254,7 @@ $background_color : #cc4b09;
 
 <h2 class="eight-bit">Views</h2>
 
-<!-- .slide: data-background="img/bg-4.png" -->
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" -->
 
 ---
 
@@ -314,7 +314,7 @@ Lets create a custom widget view.
 
 [![Level 2 demo](img/level2demo.png)](../demos/mario-locate-complete/)
 
-<!-- .slide: data-background="img/bg-5.png" -->
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-5.png" -->
 
 ---
 
@@ -336,7 +336,7 @@ What have we learned about Widget Views?
 
 <h2 class="eight-bit">Ready?</h2>
 
-<!-- .slide: data-background="img/bg-4.png" -->
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" -->
 
 ---
 
@@ -347,7 +347,7 @@ What have we learned about Widget Views?
 
 <h2 class="eight-bit">Extending a View</h2>
 
-<!-- .slide: data-background="img/bg-4.png" -->
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" -->
 
 ---
 
@@ -410,7 +410,7 @@ What have we learned about Widget Views?
 
 <img src="img/demo-extending-view.png" width="50%"/>
 
-<!-- .slide: data-background="img/bg-5.png" -->
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-5.png" -->
 
 ---
 
@@ -433,7 +433,7 @@ What have we learned about Widget Views?
 
 <h2 class="eight-bit">Ready?</h2>
 
-<!-- .slide: data-background="img/bg-4.png" -->
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" -->
 
 ---
 
@@ -444,7 +444,7 @@ What have we learned about Widget Views?
 
 <h2 class="eight-bit">Put it all together.</h2>
 
-<!-- .slide: data-background="img/bg-4.png" -->
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" -->
 
 ---
 
@@ -480,4 +480,4 @@ What have we learned about Widget Views?
 
 ---
 
-<!-- .slide: data-background="img/bg-final.png" -->
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-final.png" -->
