@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+
     <title>Custom theme preview</title>
+
     <style>
       html,
       body,
@@ -13,82 +15,109 @@
         height: 100%;
         width: 100%;
       }
-
-      .widget-things-image {
-        border: 1px solid #000;
-        cursor: pointer;
-      }
     </style>
     <link rel="stylesheet" href="../dist/my-theme/main.css" />
-    <script src="https://js.arcgis.com/4.11/"></script>
+
+    <script>
+      var locationPath = window.location.href.replace(/\/[^/]+$/, "/");
+      var dojoConfig = {
+        paths: {
+          layers: locationPath + "../layers"
+        }
+      };
+    </script>
+
+    <script src="https://js.arcgis.com/4.12/"></script>
+
     <script>
       require([
         "esri/views/MapView",
-        "esri/WebMap",
+        "esri/Map",
         "esri/widgets/Search",
         "esri/widgets/Legend",
         "esri/widgets/Compass",
         "esri/widgets/Expand",
-        "esri/widgets/Home"
-      ], function(MapView, WebMap, Search, Legend, Compass, Expand, Home) {
-        var webmap = new WebMap({
-          portalItem: {
-            id: "e7a5e0c315cf4ed4a017c8eaabb247c7"
-          }
+        "esri/widgets/LayerList",
+        "esri/widgets/Home",
+        "esri/Basemap",
+        "esri/layers/TileLayer",
+        "layers/BrickLayer",
+        "layers/palette"
+      ], function(
+        MapView,
+        Map,
+        Search,
+        Legend,
+        Compass,
+        Expand,
+        LayerList,
+        Home,
+        Basemap,
+        TileLayer,
+        BrickLayer,
+        palette
+      ) {
+        var basemap = new Basemap({
+          baseLayers: [
+            new BrickLayer({
+              layer: new TileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer"),
+              filter: {
+                darken: 0.25,
+                saturate: 2
+              }
+            })
+          ]
+        });
+
+        var map = new Map({
+          basemap: basemap
         });
 
         var view = new MapView({
-          map: webmap,
-          container: "viewDiv"
+          map: map,
+          container: "viewDiv",
+          center: [-100, 40],
+          scale: 50000000,
+          constraints: {
+            minScale: 50000000,
+            snapToZoom: false
+          }
         });
 
         var home = new Home({
           view: view
         });
-
         view.ui.add(home, "top-left");
 
         var compass = new Compass({
           view: view
         });
-
         view.ui.add(compass, "top-left");
 
         var search = new Search({
           view: view
         });
-
         view.ui.add(search, "top-right");
 
         var legend = new Legend({
           view: view
         });
-
-        var expand = new Expand({
+        var legendExpand = new Expand({
           view: view,
-          content: legend
+          content: legend,
+          expanded: true
         });
+        view.ui.add(legendExpand, "bottom-left");
 
-        view.ui.add(expand, "bottom-left");
-
-        view.when(function() {
-          search.search("Jackson, Georgia");
+        var layerList = new LayerList({
+          view: view
         });
-
-        var images = ["widget-things.png", "upside-down.png"];
-
-        var img = document.createElement("img");
-        img.className = "widget-things-image";
-        img.src = "widget-things.png";
-        img["data-image-index"] = 0;
-
-        img.onclick = function() {
-          var nextIndex = !!img["data-image-index"] ? 0 : 1;
-          img.src = images[nextIndex];
-          img["data-image-index"] = nextIndex;
-        };
-
-        view.ui.add(img, "bottom-right");
+        var layerListExpand = new Expand({
+          view: view,
+          content: layerList,
+          expanded: true
+        });
+        view.ui.add(layerListExpand, "top-left");
       });
     </script>
   </head>
