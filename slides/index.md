@@ -46,11 +46,9 @@ TODO: BLOCK THEME WARNING
 
 <!-- Presenter: Matt -->
 
-<h1>Act I</h1>
+<h1>Act I: Theming</h1>
 
 TODO: IMAGE
-
-<h2>Theming</h2>
 
 ---
 
@@ -69,7 +67,9 @@ TODO: IMAGE
 
 ---
 
-# Esri Themes
+# Act I: Theming
+
+## Esri Themes
 
 10 themes are provided out-of-the-box:
 
@@ -89,7 +89,9 @@ Using a theme requires only a slight update to the CSS path.
 
 ---
 
-# Theming Technology
+# Act I: Theming
+
+## Theming Technology
 
 ---
 
@@ -118,7 +120,9 @@ We use
 
 ---
 
-# Theming Steps
+# Act I: Theming
+
+## Theming Steps
 
 1.  Get our theme utility.
 1.  Use the utility.
@@ -129,7 +133,9 @@ We use
 
 ---
 
-# Theming Setup
+# Act I: Theming
+
+## Theming Setup
 
 1.  Clone the utility `jsapi-styles.git`
 1.  Run `npm install`
@@ -189,7 +195,9 @@ Link your stylesheet in your app.
 
 ---
 
-# Goals
+# Act I: Theming
+
+## Theming Goals
 
 Theme Smart
 
@@ -198,7 +206,9 @@ Theme Smart
 
 ---
 
-# Theme Structure
+# Act I: Theming
+
+## Theme Structure
 
 Let's look at how the core theme is structured
 
@@ -260,7 +270,9 @@ $button-color--hover: darken($button-color, 10%) !default;
 
 ---
 
-# Act I: Lets make a theme
+# Act I: Theming
+
+## Lets make a theme
 
 TODO: IMAGE
 
@@ -274,7 +286,9 @@ TODO: IMAGE
 
 ---
 
-# Act I: Theming Recap
+# Act I: Theming
+
+## Recap
 
 - Use the utility for easy theming.
 - Theme structure
