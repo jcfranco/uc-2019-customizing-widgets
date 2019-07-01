@@ -4,31 +4,40 @@
 
 //  Main Colors Vars
 $font-color: #fff;
-$interactive-font-color: #ffed00;
+$interactive-font-color: #fff;
 $background-color: #e3000b;
-$button-color: #000;
-$border-color: #000;
 
-$border-color--active: #ffed00;
-$background-color--active: #000;
+// Hover
+$interactive-font-color--hover: #000;
+$background-color--hover: #ffed00;
+$border-color--hover: #e3000b;
 
+// Active
+$border-color--active: #e3000b;
+$background-color--active: #ffed00;
+
+// radius
 $border-radius: none;
+
+// border
+$border-color: #000;
+$border-color--subtle: #fff;
+
+// buttons
+$button-color: #fff;
+$button-color--hover: #ffed00;
+$button-color--inverse: #ffed00;
 
 // Font
 @font-face {
-  font-family: "Legothick";
-  src: url("../font/Legothick.eot?") format("eot"), url("../font/Legothick.woff") format("woff"),
-    url("../font/Legothick.ttf") format("truetype"), url("../font/Legothick.svg#Legothick") format("svg");
+  font-family: "lego_brixregular";
+  src: url("../font/lego_brix-webfont.woff2") format("woff2"), url("../font/lego_brix-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
-* {
-  text-transform: uppercase;
-}
-
 // Font
-$font-family: "Legothick", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family: "lego_brixregular", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
 $font-weight: 600 !default;
 $font-weight__heading: 600 !default;
@@ -42,16 +51,15 @@ $button-width: 48px !default;
 $button-height: 48px !default;
 
 @mixin boxShadow($arguments) {
-  border: 2px solid #000;
-  //box-shadow: #{$arguments};
+  border: 3px solid #000;
 }
 
 @mixin defaultBoxShadow() {
-  @include boxShadow("0 1px 2px rgba(0, 0, 0, 0.3)");
+  border: 3px solid #000;
 }
 
 @mixin borderBoxShadow() {
-  //box-shadow: 0 0 0 1px rgba($interactive-font-color, 0.3);
+  border: 3px solid #000;
 }
 
 @import "../base/core";
