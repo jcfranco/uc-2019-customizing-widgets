@@ -76,7 +76,7 @@ TODO: IMAGE
 Using a theme requires only a slight update to the CSS path.
 
 ```html
-<link rel="stylesheet" href="https://js.arcgis.com/4.11/esri/themes/<theme-name>/main.css" />
+<link rel="stylesheet" href="https://js.arcgis.com/4.12/esri/themes/<theme-name>/main.css" />
 ```
 
 ---
@@ -137,7 +137,7 @@ We use
 
 ## Theming Setup
 
-1.  Clone the utility `jsapi-styles.git`
+1.  Clone the utility `jsapi-styles.git` ([repo](https://github.com/jcfranco/jsapi-styles))
 1.  Run `npm install`
 1.  Edit <span style="font-weight:bold;">`sass/my-theme/main.scss`</span>.
 1.  See <span style="font-weight:bold;">`dist/my-theme/main.css`</span>.
