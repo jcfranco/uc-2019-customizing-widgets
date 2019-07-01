@@ -1,5 +1,5 @@
-<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-1.png" -->
-<!-- Presenter: Matt -->
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/devsummit/bg-1.png" data-background-size="cover" -->
+<!-- Presenter: Franco -->
 
 # ArcGIS API for JavaScript: Customizing Widgets
 
@@ -11,13 +11,19 @@
 
 # Agenda
 
+TODO BLOCK THEME WARNING
+
+---
+
+# Agenda
+
 - What can be customized
 - Customization approaches with demos
 - Q & A
 
 ---
 
-# What we mean by customizing
+# Customizing Widgets
 
 - Theming
   - Changing styles: colors, sizing, font, etc.
@@ -29,36 +35,62 @@
 
 # Customization Approaches
 
-- Authoring a theme <!-- .element: class="fragment" data-fragment-index="1" -->
-- Recreating a view <!-- .element: class="fragment" data-fragment-index="2" -->
-- Extending a view <!-- .element: class="fragment" data-fragment-index="3" -->
+- Customizing a theme <!-- .element: class="fragment" data-fragment-index="1" -->
+- Customizing a widget view <!-- .element: class="fragment" data-fragment-index="2" -->
 
 ---
 
-![continue](./img/8bit/8-BIT-continue-1366.png)
+TODO: CONTINUE SLIDE
+
+![continue]()
+
+<!-- .slide: data-background="img/upside-down-bg.jpg" data-background-size="cover"  -->
 
 ---
 
-<!-- Presenter: Alan -->
-<h1 class="eight-bit">Level I</h1>
+<!-- Presenter: Matt -->
 
-![Level 1](./img/8bit/JSAPI-8bit_Level-1.png)
+<h1>Act I</h1>
 
-<h2 class="eight-bit">Theming</h2>
+TODO: IMAGE
+![Act 1]()
 
-<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" -->
+<h2>Theming</h2>
+
+<!-- .slide: data-background="img/upside-down-bg.jpg" data-background-size="cover"  -->
 
 ---
 
-# Level I: Theming
+# Act I: Theming
 
 ## Why Theme? <!-- .element: class="fragment" data-fragment-index="0" -->
 
-- Match branding. <!-- .element: class="fragment" data-fragment-index="1" -->
-- Match the map. <!-- .element: class="fragment" data-fragment-index="2" -->
-- Contrast with the map. <!-- .element: class="fragment" data-fragment-index="3" -->
-- Based on the environment. <!-- .element: class="fragment" data-fragment-index="4" -->
-- User-specific (e.g. bigger buttons) <!-- .element: class="fragment" data-fragment-index="5" -->
+- Match branding.
+- Match the map.
+- Contrast with the map.
+- User-specific (e.g. bigger buttons)
+
+<!-- .element: class="fragment" data-fragment-index="1" -->
+
+---
+
+# Esri Themes
+
+10 themes are provided out-of-the-box:
+
+Using a theme requires only a slight update to the CSS path.
+
+```html
+<link rel="stylesheet" href="https://js.arcgis.com/4.11/esri/themes/<theme-name>/main.css" />
+```
+
+---
+
+<!-- .slide: data-background="img/demo-time.png" data-background-size="cover" style="padding-top: 35%;" -->
+
+**Theme Switcher**
+
+[Out-of-the-box themes](../demos/out-of-the-box-themes/)
 
 ---
 
@@ -68,7 +100,7 @@
 
 We use
 
-![Sass](img/sass-white.png)
+![Sass](./img/sass-white.png)
 
 ### to create our CSS.
 
@@ -79,54 +111,37 @@ We use
 
 ---
 
-![Sass](img/sass-white.png)
+![Sass](./img/sass-white.png)
 
 ### is a powerful scripting language for compiling CSS.
 
-- It's modular. <!-- .element: class="fragment" data-fragment-index="1" -->
-- It's DRY. <!-- .element: class="fragment" data-fragment-index="2" -->
-- It makes theming easy. <!-- .element: class="fragment" data-fragment-index="3" -->
+- It's modular.
+- It's DRY.
+- It makes theming easy.
+
+<!-- .element: class="fragment" data-fragment-index="1" -->
 
 ---
 
-<h3 style="font-family:monospace;text-transform:uppercase;">Previously on Theming</h3>
-<span style="font-family:monospace;text-transform:uppercase;">Life was hard.</span> <!-- .element: class="fragment" data-fragment-index="1" -->
+# Theming Steps
+
+1.  Get our theme utility.
+1.  Use the utility.
+1.  Customize your theme.
+1.  Host your CSS file.
+
+<!-- .element: class="fragment" data-fragment-index="1" -->
 
 ---
 
-Before, you needed to
+# Theming Setup
 
-1.  Pull down the API <a href="https://github.com/Esri/arcgis-js-api/tree/4master">(arcgis-js-api)</a>.
-1.  Create a theme directory in the right place.
-1.  Create a Sass file.
-1.  Import the core file.
-1.  Run the compiler.
-1.  Wonder if there were an easier way. <!-- .element: class="fragment" data-fragment-index="1" -->
+1.  Clone the utility `jsapi-styles.git`
+1.  Run `npm install`
+1.  Edit <span style="font-weight:bold;">`sass/my-theme/main.scss`</span>.
+1.  See <span style="font-weight:bold;">`dist/my-theme/main.css`</span>.
 
----
-
-# There is an easier way!
-
-<ol>
-  <li class="fragment">Get our theme utility.</li>
-  <li class="fragment">Use the utility.</li>
-  <li class="fragment">Customize your theme.</li>
-  <li class="fragment">Then magic.<br/><img src="img/8bit/JSAPI-8bit_Magic.png" style="margin: 0;"/></li>
-</ol>
-
-<div style="visibility:hidden;">You won't need the base stylesheet.</div>
-
----
-
-# There is an easier way!
-
-<ol>
-  <li>Clone the utility `jsapi-styles.git`</li>
-  <li>Run `npm install`</li>
-  <li>Edit <span style="font-weight:bold;">`sass/my-theme/main.scss`</span>.</li>
-  <li>See <span style="font-weight:bold;">`dist/my-theme/main.css`</span>.<br/><img src="img/8bit/JSAPI-8bit_Magic.png" style="margin: 0;"/></li>
-</ol>
-<div class="fragment">You won't need the base stylesheet.</div>
+<!-- .element: class="fragment" data-fragment-index="1" -->
 
 ---
 
@@ -135,11 +150,9 @@ Before, you needed to
 Clone the repo.<br/>
 <a href="https://github.com/jcfranco/jsapi-styles" target="_blank">https://github.com/jcfranco/jsapi-styles</a>
 
-<div>
 ```
-git clone https://github.com/jcfranco/interactive-design.git
+git clone https://github.com/jcfranco/jsapi-styles.git
 ```
-</div><!-- .element: class="fragment" data-fragment-index="1" -->
 
 ---
 
@@ -147,12 +160,12 @@ git clone https://github.com/jcfranco/interactive-design.git
 
 `npm install`
 
-<div>
-  - Installs the necessary bits.
-  - Creates a sample theme directory.
-  - Compiles the CSS from the SCSS.
-  - Spins up a preview in your default browser.
-</div><!-- .element: class="fragment" data-fragment-index="1" -->
+- Installs the necessary bits.
+- Creates a sample theme directory.
+- Compiles the CSS from the SCSS.
+- Spins up a preview in your default browser.
+
+<!-- .element: class="fragment" data-fragment-index="1" -->
 
 ---
 
@@ -174,28 +187,27 @@ Host your stylesheet and any relevant assets.
 
 Link your stylesheet in your app.
 
-```
+```html
 <!-- In your app: -->
-<link href="path/to/your/theme/main.css" rel="stylesheet">
+<link href="path/to/your/theme/main.css" rel="stylesheet" />
 ```
 
 ---
 
-# Let's have a look!
+# Goals
 
----
+Theme Smart
 
-# Theme Smart
-
-Avoid adding additional CSS selectors.<br/>
-Instead, use Sass to your advantage.<br/>
-<span>Let's look at how the core theme is structured.</span><!-- .element: class="fragment" data-fragment-index="1" -->
+- Avoid adding additional CSS selectors
+- Instead, use Sass to your advantage
 
 ---
 
 # Theme Structure
 
-- Color <span>: `colorVariables.scss`</span><!-- .element: class="fragment" data-fragment-index="1" -->
+Let's look at how the core theme is structured
+
+- Color <span>: `color.scss`</span><!-- .element: class="fragment" data-fragment-index="1" -->
 - Size <span>: `sizes.scss`</span><!-- .element: class="fragment" data-fragment-index="1" -->
 - Type <span>: `type.scss`</span><!-- .element: class="fragment" data-fragment-index="1" -->
 
@@ -205,174 +217,152 @@ Instead, use Sass to your advantage.<br/>
 
 ### Default
 
-```
-// Inside base/_colorVariables.scss
-$background_color : #fff !default ;
+```scss
+// Inside base/_color_.scss
+$background-color: #fff !default;
 ```
 
 Any value assignment overrides the `!default` value.
 
-```
+```scss
 // Inside sass/my-theme/main.scss
-$background_color : #cc4b09;
+$background-color: #1e0707;
 ```
 
----
-
-# So let's make a theme!
-
-<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-5.png" -->
+But wait...there's more!<!-- .element: class="fragment" data-fragment-index="1" -->
 
 ---
 
-# Level I: Theming Recap
+# Theme Structure
 
-- Use the utility for easy theming. <!-- .element: class="fragment" data-fragment-index="1" -->
-- Theme structure <!-- .element: class="fragment" data-fragment-index="2" -->
-  - Color <!-- .element: class="fragment" data-fragment-index="2" -->
-  - Size <!-- .element: class="fragment" data-fragment-index="2" -->
-  - Typography <!-- .element: class="fragment" data-fragment-index="2" -->
-- Use the core and override values. <!-- .element: class="fragment" data-fragment-index="3" -->
+Override the core color variables...
 
----
-
-<!-- LEVEL UP A -->
-<h1 class="eight-bit">LEVEL UP!</h1>
-
-![Level 1](./img/8bit/JSAPI-8bit_Level-1.png)
-
-<h2 class="eight-bit">Ready?</h2>
-
-<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" -->
-
----
-
-<!-- LEVEL UP B -->
-<h1 class="eight-bit">LEVEL II</h1>
-
-![Level 2](./img/8bit/JSAPI-8bit_Level-2.png)
-
-<h2 class="eight-bit">Views</h2>
-
-<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" -->
-
----
-
-<!-- Presenter: Matt -->
-
-# Level II: Widget Composition
-
-Widgets are composed of Views & ViewModels <!-- .element: class="fragment" data-fragment-index="1" -->
-
-- Benefits of View/ViewModel <!-- .element: class="fragment" data-fragment-index="2" -->
-  - Reusable
-  - UI replacement
-  - Framework integration
-
----
-
-# Level II: Views
-
-- Presentation of the Widget <!-- .element: class="fragment" data-fragment-index="1" -->
-- Uses ViewModel APIs to render the UI <!-- .element: class="fragment" data-fragment-index="1" -->
-- View-specific logic resides here <!-- .element: class="fragment" data-fragment-index="1" -->
-
----
-
-# Level II: Working with Views
-
-API Exploration
-
-- [Locate Doc](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Locate.html)
-- [Locate Sample](https://developers.arcgis.com/javascript/latest/sample-code/widgets-locate/index.html)
-
----
-
-# Level II: `LocateViewModel`
-
-Overview of `LocateViewModel`
-
-```ts
-interface LocateViewModel {
-  readonly state: string;
-  locate(): IPromise<Object>;
-  graphic?: Graphic;
-  scale?: number;
-  view?: MapView | SceneView;
-}
+```scss
+$font-color                       : #3a5fe5;
+$interactive-font-color           : #ff1515;
+$background-color                 : #1e0707
+$button-color                     : #ff1515;
 ```
 
----
+...then magic!<!-- .element: class="fragment" data-fragment-index="1" -->
 
-# Demo: Customize widget View
-
-Lets create a custom widget view.
-
-- [Demo Complete](../demos/mario-locate-complete/)
-- [Demo Steps](../demos/mario-locate-start/STEPS.md)
-- [Demo Start](../demos/mario-locate-start/)
-
-[![Level 2 demo](img/level2demo.png)](../demos/mario-locate-complete/)
-
-<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-5.png" -->
+<img src="./img/8bit/JSAPI-8bit_Magic.png" style="margin: 0;"/><!-- .element: class="fragment" data-fragment-index="1" -->
 
 ---
 
-# Level II: Views Recap
+# Magic
 
-What have we learned about Widget Views?
+<img src="./img/8bit/JSAPI-8bit_Magic.png" style="margin: 0;"/>
 
-- Face of the widget
-- Present ViewModel logic
-- ViewModel separation allows framework integration or custom views
-- Views downloadable on API doc pages
+Using `$button-color` we "automagically" set the hover color.
 
----
+```scss
+$button-color--hover: darken($button-color, 10%) !default;
+// ...etc
+```
 
-<!-- LEVEL UP A -->
-<h1 class="eight-bit">LEVEL UP!</h1>
-
-![Level 2](./img/8bit/JSAPI-8bit_Level-2.png)
-
-<h2 class="eight-bit">Ready?</h2>
-
-<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" -->
+[API Styling Guide](https://developers.arcgis.com/javascript/latest/guide/styling/index.html#sassy-widgets)
 
 ---
 
-<!-- LEVEL UP B -->
-<h1 class="eight-bit">LEVEL III</h1>
+# Act I: Lets make a theme
 
-![Level 3](./img/8bit/JSAPI-8bit_Level-3.png)
+Stranger Things Theme
 
-<h2 class="eight-bit">Extending a View</h2>
+TODO: IMAGE
+[![Custom Theme](./img/custom-theme.png)](../demos/custom-theme/)
 
-<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" -->
+**DISCLAIMER**: `theme has low contrast`
+
+---
+
+<!-- .slide: data-background="img/demo-time.png" data-background-size="cover" style="padding-top: 35%;" -->
+
+**Custom Theme**
+
+[Preview](../../jsapi-styles/preview/) | [Demo Steps](../demos/custom-theme/STEPS.md)
 
 ---
 
-<!-- Presenter: JC -->
+# Act I: Theming Recap
 
-# Level III: Extending a View
-
-- Why? <!-- .element: class="fragment" data-fragment-index="1" -->
-  - Reusable <!-- .element: class="fragment" data-fragment-index="2" -->
-  - Same ecosystem <!-- .element: class="fragment" data-fragment-index="3" -->
-- How? <!-- .element: class="fragment" data-fragment-index="4" -->
-  - JS API v4.8 <!-- .element: class="fragment" data-fragment-index="5" -->
-  - <!-- .element: class="fragment" data-fragment-index="5" --> `esri/widgets/Widget`
-  - TypeScript <!-- .element: class="fragment" data-fragment-index="5" -->
+- Use the utility for easy theming.
+- Theme structure
+  - Color
+  - Size
+  - Typography
+- Use the core and override values.
 
 ---
+
+<!-- NEXT ACT  A -->
+<h1>End Act I</h1>
+
+![Act 1](./img/8bit/JSAPI-8bit_Act-End.png)
+
+<!-- .slide: data-background="img/upside-down-bg.jpg" data-background-size="cover"  -->
+
+---
+
+<!-- NEXT ACT  B -->
+<h1>Act II</h1>
+
+![Act 2](./img/8bit/JSAPI-8bit_Act-Start.png)
+
+<h2>Views</h2>
+
+<!-- .slide: data-background="img/upside-down-bg.jpg" data-background-size="cover"  -->
+
+---
+
+# Act II: Widget Composition
+
+Widgets are composed of Views & ViewModels
+
+- Logic is separate from presentation
+- Reusable
+- UI replacement
+- Framework integration
+
+<!-- .element: class="fragment" data-fragment-index="1" -->
+
+---
+
+# Act II: TypeScript
+
+- Widgets written in TypeScript (Typed JavaScript)
+- JS of the future, now <!-- .element: class="fragment" data-fragment-index="1" -->
+- IDE support <!-- .element: class="fragment" data-fragment-index="2" -->
+  - Visual Studio
+  - WebStorm
+  - Sublime
+  - and more!
+
+---
+
+# Act II: Views
+
+- Presentation of the Widget
+- Uses ViewModel APIs to render the UI
+- View-specific logic resides here
+- Extends `esri/widgets/Widget`
+
+<!-- .element: class="fragment" data-fragment-index="1" -->
+
+---
+
+# Act II: Widget Class
 
 `esri/widgets/Widget`
 
-- Provides lifecycle <!-- .element: class="fragment" data-fragment-index="1" -->
-- API consistency <!-- .element: class="fragment" data-fragment-index="2" -->
+- Provides lifecycle
+- API consistency
+
+<!-- .element: class="fragment" data-fragment-index="1" -->
 
 ---
 
-# Lifecycle
+# Act II: Widget Lifecycle
 
 - <!-- .element: class="fragment" data-fragment-index="1" --> `constructor`
 - <!-- .element: class="fragment" data-fragment-index="2" --> `postInitialize`
@@ -381,40 +371,121 @@ What have we learned about Widget Views?
 
 ---
 
-# `render`
+# Act II: `render`
 
-- Defines UI <!-- .element: class="fragment" data-fragment-index="1" -->
-- Reacts to state <!-- .element: class="fragment" data-fragment-index="2" -->
-- Uses JSX <!-- .element: class="fragment" data-fragment-index="3" -->
-- VDOM <!-- .element: class="fragment" data-fragment-index="4" -->
+- Defines UI
+- Reacts to state
+- Uses JSX
+- VDOM
 
----
-
-# TypeScript
-
-- Typed JavaScript <!-- .element: class="fragment" data-fragment-index="1" -->
-- JS of the future, now <!-- .element: class="fragment" data-fragment-index="2" -->
-- IDE support <!-- .element: class="fragment" data-fragment-index="3" -->
-  - Visual Studio <!-- .element: class="fragment" data-fragment-index="3" -->
-  - WebStorm <!-- .element: class="fragment" data-fragment-index="3" -->
-  - Sublime <!-- .element: class="fragment" data-fragment-index="3" -->
-  - and more! <!-- .element: class="fragment" data-fragment-index="3" -->
+<!-- .element: class="fragment" data-fragment-index="1" -->
 
 ---
 
-# Demo: Extending a View
+# Act II: Working with Views
 
-[Demo](https://jcfranco.github.io/uc-2019-customizing-widgets/demos/custom-bookmarks-end/)
+API Exploration
+
+- [Compass Doc](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Compass.html)
+- [Compass Sample](https://developers.arcgis.com/javascript/latest/sample-code/widgets-compass-2d/index.html)
+
+---
+
+# Act II: Recreating a view
+
+Custom Stranger Things Compass
+
+[![Custom Theme](./img/custom-compass.png)](../demos/custom-compass-complete/)
+
+---
+
+# Act II: Compass Interface
+
+CustomCompass widget: Same interface as the default Compass widget
+
+```ts
+interface CustomCompass {
+  view: View; //MapView | SceneView
+  viewModel: CompassViewModel;
+  reset(): void; // CompassViewModel.reset()
+}
+```
+
+---
+
+<!-- .slide: data-background="img/demo-time.png" data-background-size="cover" style="padding-top: 35%;" -->
+
+Recreating a view
+
+[Demo Start](../demos/custom-compass-start/) | [Demo Steps](../demos/custom-compass-start/STEPS.md) | [Compass Doc](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Compass.html)
+
+---
+
+# Act II: Views Recap
+
+What have we learned about Widget Views?
+
+- Face of the widget
+- Present ViewModel logic
+- ViewModel separation allows framework integration or custom views
+- Downloadable on API docs
+
+<!-- .element: class="fragment" data-fragment-index="1" -->
+
+---
+
+<!-- NEXT ACT  A -->
+<h1>End Act II</h1>
+
+![Act 2](./img/8bit/JSAPI-8bit_Act-End.png)
+
+<!-- .slide: data-background="img/upside-down-bg.jpg" data-background-size="cover"  -->
+
+---
+
+<!-- Presenter: Franco -->
+
+<!-- NEXT ACT  B -->
+<h1>Act III</h1>
+
+![Act 3](./img/8bit/JSAPI-8bit_Act-Start.png)
+
+<h2>Extending a View</h2>
+
+<!-- .slide: data-background="img/upside-down-bg.jpg" data-background-size="cover"  -->
+
+---
+
+# Act III: Extending
+
+- Why? <!-- .element: class="fragment" data-fragment-index="1" -->
+  - Reusable <!-- .element: class="fragment" data-fragment-index="2" -->
+  - Same ecosystem <!-- .element: class="fragment" data-fragment-index="3" -->
+- How? <!-- .element: class="fragment" data-fragment-index="4" -->
+  - <!-- .element: class="fragment" data-fragment-index="5" --> Leveraging `esri/widgets/Widget`
+  - API Widgets <!-- .element: class="fragment" data-fragment-index="6" -->
+
+---
+
+<!-- .slide: data-background="img/demo-time.png" data-background-size="cover" style="padding-top: 35%;" -->
+
+**CustomCompass (Revisited)**
+
+[Steps](../demos/custom-compass-extended-start/STEPS.md)
+
+---
+
+**CustomBasemapGallery**
+
+[Demo](../demos/custom-basemap-gallery-complete/)
 |
-[Steps](https://github.com/jcfranco/uc-2019-customizing-widgets/blob/master/demos/custom-bookmarks-start/STEPS.md)
+[Steps](../demos/custom-basemap-gallery-start/STEPS.md)
 
-<img src="img/demo-extending-view.png" width="50%"/>
-
-<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-5.png" -->
+<!-- .slide: data-background="img/demo-time.png" data-background-size="cover" style="padding-top: 35%;" -->
 
 ---
 
-# Level III: Extending a View Recap
+# Act III: Extending a View Recap
 
 - Reusable <!-- .element: class="fragment" data-fragment-index="1" -->
   - View/ViewModel <!-- .element: class="fragment" data-fragment-index="1" -->
@@ -426,25 +497,21 @@ What have we learned about Widget Views?
 
 ---
 
-<!-- LEVEL UP A -->
-<h1 class="eight-bit">LEVEL UP!</h1>
+<!-- NEXT ACT A -->
+<h1>End Act III</h1>
 
-![Level 3](./img/8bit/JSAPI-8bit_Level-3.png)
+![Act 3](./img/8bit/JSAPI-8bit_Act-End.png)
 
-<h2 class="eight-bit">Ready?</h2>
-
-<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" -->
+<!-- .slide: data-background="img/upside-down-bg.jpg" data-background-size="cover"  -->
 
 ---
 
-<!-- LEVEL UP B -->
-<h1 class="eight-bit">LEVEL IV</h1>
+<!-- NEXT ACT B -->
+<h1>The End?</h1>
 
-![Level 4](./img/8bit/JSAPI-8bit_Level-4-ani.gif)
+<img class="floating" src="./img/8bit/JSAPI-8bit_End.png" height="400" style="margin-left:10px; margin-right: 10px;"/>
 
-<h2 class="eight-bit">Put it all together.</h2>
-
-<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" -->
+<!-- .slide: data-background="img/upside-down-bg.jpg" data-background-size="cover"  -->
 
 ---
 
@@ -453,6 +520,16 @@ What have we learned about Widget Views?
 - Authored a theme <!-- .element: class="fragment" data-fragment-index="1" -->
 - Recreated a view <!-- .element: class="fragment" data-fragment-index="2" -->
 - Extended a view <!-- .element: class="fragment" data-fragment-index="3" -->
+
+---
+
+## Recommended Sessions
+
+- [Intro to TypeScript](https://devsummit2019.schedule.esri.com/schedule/996246169) Wed 1:30pm
+- [JavaScript for Geographers](https://devsummit2019.schedule.esri.com/schedule/237520120) Wed 2:30 pm
+- [Using TypeScript with ArcGIS API for JavaScript](https://devsummit2019.schedule.esri.com/schedule/1194566856) Wed 2:30 pm
+- [Accessible Web Mapping Apps](https://devsummit2019.schedule.esri.com/schedule/672667633) Thu 9am
+- [Building Your own Widget with ArcGIS API for JavaScript](https://devsummit2019.schedule.esri.com/schedule/822290096) Thu 4pm
 
 ---
 
@@ -466,7 +543,7 @@ What have we learned about Widget Views?
 ---
 
 <!-- **please rate us** -->
-<!-- .slide: data-background="img/uc18-survey.png" -->
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/devsummit/bg-rating.png" data-background-size="cover" -->
 
 ---
 
@@ -474,10 +551,12 @@ What have we learned about Widget Views?
 
 ##### For example
 
+> 👓 Where's Barbara? 😭
+
 > 🤔 Where can I find the slides/source?
 
-👉 [esriurl.com/customwidgetsuc2019](http://esriurl.com/customwidgetsuc2019) 👈
+👉 [bit.ly/customwidgetsds19](http://bit.ly/customwidgetsds19) 👈
 
 ---
 
-<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-final.png" -->
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/devsummit/bg-esri.png" data-background-size="cover" -->
