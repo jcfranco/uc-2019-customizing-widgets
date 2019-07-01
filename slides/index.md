@@ -511,11 +511,9 @@ TODO: ADD
 
 ##### For example
 
-> 👓 Where's Barbara? 😭
-
 > 🤔 Where can I find the slides/source?
 
-👉 [bit.ly/customwidgetsds19](http://bit.ly/customwidgetsds19) 👈
+👉 [esriurl.com/customwidgetsuc2019](http://esriurl.com/customwidgetsuc2019) 👈
 
 ---
 
