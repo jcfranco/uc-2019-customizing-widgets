@@ -40,7 +40,7 @@ TODO: BLOCK THEME WARNING
 
 ---
 
-TODO: CONTINUE SLIDE
+<img alt="Sass" src="./img/8bit/8-BIT-continue.png" class="plain" />
 
 ---
 
@@ -81,7 +81,7 @@ Using a theme requires only a slight update to the CSS path.
 
 ---
 
-<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" data-background-size="cover" style="padding-top: 35%;" -->
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" data-background-size="cover" -->
 
 **Theme Switcher**
 
@@ -262,13 +262,11 @@ $button-color--hover: darken($button-color, 10%) !default;
 
 # Act I: Lets make a theme
 
-Stranger Things Theme
-
 TODO: IMAGE
 
 ---
 
-<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" data-background-size="cover" style="padding-top: 35%;" -->
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" data-background-size="cover"  -->
 
 **Custom Theme**
 
@@ -377,7 +375,7 @@ API Exploration
 
 # Act II: Recreating a view
 
-Custom Stranger Things Compass
+TODO: demo
 
 ---
 
@@ -395,7 +393,7 @@ interface CustomCompass {
 
 ---
 
-<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" data-background-size="cover" style="padding-top: 35%;" -->
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" data-background-size="cover" -->
 
 Recreating a view
 
@@ -441,7 +439,7 @@ What have we learned about Widget Views?
 
 ---
 
-<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" data-background-size="cover" style="padding-top: 35%;" -->
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" data-background-size="cover" -->
 
 **CustomCompass (Revisited)**
 
@@ -455,7 +453,7 @@ What have we learned about Widget Views?
 |
 [Steps](../demos/custom-basemap-gallery-start/STEPS.md)
 
-<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" data-background-size="cover" style="padding-top: 35%;" -->
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" data-background-size="cover" -->
 
 ---
 
