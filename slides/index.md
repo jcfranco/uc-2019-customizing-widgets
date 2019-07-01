@@ -175,10 +175,10 @@ git clone https://github.com/jcfranco/jsapi-styles.git
 Edit your theme.<br/>
 `sass/my-theme/main.scss`
 
-<div>
 Optionally, edit your app.<br/>
 `preview/index.html`
-</div><!-- .element: class="fragment" data-fragment-index="1" -->
+
+<!-- .element: class="fragment" data-fragment-index="1" -->
 
 ---
 
@@ -360,10 +360,12 @@ Widgets are composed of Views & ViewModels
 
 # Act II: Widget Lifecycle
 
-- <!-- .element: class="fragment" data-fragment-index="1" --> `constructor`
-- <!-- .element: class="fragment" data-fragment-index="2" --> `postInitialize`
-- <!-- .element: class="fragment" data-fragment-index="3" --> `render`
-- <!-- .element: class="fragment" data-fragment-index="4" --> `destroy`
+- `constructor`
+- `postInitialize`
+- `render`
+- `destroy`
+
+<!-- .element: class="fragment" data-fragment-index="1" -->
 
 ---
 
@@ -444,12 +446,12 @@ What have we learned about Widget Views?
 
 # Act III: Extending
 
-- Why? <!-- .element: class="fragment" data-fragment-index="1" -->
-  - Reusable <!-- .element: class="fragment" data-fragment-index="2" -->
-  - Same ecosystem <!-- .element: class="fragment" data-fragment-index="3" -->
-- How? <!-- .element: class="fragment" data-fragment-index="4" -->
-  - <!-- .element: class="fragment" data-fragment-index="5" --> Leveraging `esri/widgets/Widget`
-  - API Widgets <!-- .element: class="fragment" data-fragment-index="6" -->
+- Why?
+  - Reusable
+  - Same ecosystem
+- How?
+  - Leveraging `esri/widgets/Widget`
+  - API Widgets
 
 ---
 
@@ -495,9 +497,9 @@ What have we learned about Widget Views?
 
 # Conclusion
 
-- Authored a theme <!-- .element: class="fragment" data-fragment-index="1" -->
-- Recreated a view <!-- .element: class="fragment" data-fragment-index="2" -->
-- Extended a view <!-- .element: class="fragment" data-fragment-index="3" -->
+- Themed by changin colors, sizing, etc.
+- Altered presentation (Custom UI)
+- Added additional functionality
 
 ---
 
