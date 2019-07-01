@@ -3,25 +3,22 @@
 */
 
 //  Main Colors Vars
-$font-color: #3a5fe5;
-$interactive-font-color: #ff1515;
-$background-color: #1e0707;
-$button-color: #ff1515;
+$font-color: #fff;
+$interactive-font-color: #ffed00;
+$background-color: #000;
+$button-color: #e3000b;
 
 // Font
-$font-title: "BenguiatITCW01-BoldCn";
 @font-face {
-  font-family: $font-title;
-  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/161676/BenguiatProITC-BoldCond.eot")
-      format("embedded-opentype"),
-    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/161676/BenguiatProITC-BoldCond.woff") format("woff"),
-    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/161676/BenguiatProITC-BoldCond.ttf") format("truetype");
+  font-family: "Legothick";
+  src: url("../font/Legothick.eot?") format("eot"), url("../font/Legothick.woff") format("woff"),
+    url("../font/Legothick.ttf") format("truetype"), url("../font/Legothick.svg#Legothick") format("svg");
+  font-weight: normal;
   font-style: normal;
-  font-weight: bold;
 }
 
 // Font
-$font-family: $font-title, "Avenir Next W00", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family: $font-title, "Legothick", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
 // Text
 $line-height: 1.3em !default;
