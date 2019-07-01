@@ -3,6 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no" />
+
     <title>Themes</title>
 
     <!-- Chance the path to the theme you want to use -->
@@ -22,44 +23,19 @@
     <script src="https://js.arcgis.com/4.12"></script>
 
     <script type="text/javascript">
-      var map, view, featureLayer, popup, features, dcFL, ripple, tabHandler;
+      var view;
 
       require([
-        "esri/Map",
         "esri/WebScene",
         "esri/views/SceneView",
-        "esri/tasks/QueryTask",
-        "esri/tasks/support/Query",
-        "esri/layers/FeatureLayer",
-        "esri/layers/GraphicsLayer",
-        "esri/geometry/Extent",
-        "esri/PopupTemplate",
         "esri/widgets/Compass",
         "esri/widgets/Home",
         "esri/widgets/BasemapGallery",
         "esri/widgets/Search",
-        "esri/widgets/ColorPicker",
         "esri/widgets/Expand",
-        "dojo/dom-construct",
-        "dojo/domReady!"
-      ], function(
-        Map,
-        WebScene,
-        SceneView,
-        QueryTask,
-        Query,
-        FeatureLayer,
-        GraphicsLayer,
-        Extent,
-        PopupTemplate,
-        Compass,
-        Home,
-        BasemapGallery,
-        Search,
-        ColorPicker,
-        Expand,
-        domConstruct
-      ) {
+        "esri/widgets/Legend",
+        "esri/widgets/LayerList"
+      ], function(WebScene, SceneView, Compass, Home, BasemapGallery, Search, Expand, Legend, LayerList) {
         map = new WebScene({ portalItem: { id: "2b721b9e7bef45e2b7ff78a398a33acc" } });
 
         view = new SceneView({
@@ -80,9 +56,18 @@
           "dark-red"
         ];
 
-        var selectMenuNode = document.createElement("select");
+        var home = new Home({
+          view: view
+        });
+        view.ui.add(home, "top-left");
 
-        view.ui.add(selectMenuNode, "top-left");
+        var search = new Search({
+          view: view
+        });
+        view.ui.add(search, "top-right");
+
+        var selectMenuNode = document.createElement("select");
+        view.ui.add(selectMenuNode, "top-right");
 
         selectMenuNode.onchange = function() {
           var themeLinkNode = document.getElementById("themeLink");
@@ -96,52 +81,25 @@
           selectMenuNode.appendChild(optionNode);
         });
 
-        //////////////////////////////////////////
-        // Widgets
-
-        view.popup.dockOptions = {
-          position: "bottom-center"
-        };
-
-        var search = new Search({
-          viewModel: {
-            buttonModeEnabled: true,
-            view: view
-          }
-        });
-
         var bmg = new BasemapGallery({
           view: view
         });
-
         var bmg_expand = new Expand({
-          expandIconClass: "esri-icon-basemap",
-          expandTooltip: "Expand Basemap Gallery",
           expanded: true,
           view: view,
           content: bmg
         });
+        view.ui.add(bmg_expand, "bottom-left");
 
-        var home = new Home({
-          viewModel: {
-            view: view
-          }
+        var legend = new Legend({
+          view: view
         });
+        view.ui.add(legend, "bottom-right");
 
-        var compass = new Compass({
-          viewModel: {
-            view: view
-          }
+        var layerList = new LayerList({
+          view: view
         });
-
-        var colorPicker = new ColorPicker();
-
-        view.ui.add([search], "top-right");
-        view.ui.add([bmg_expand], "bottom-left");
-        view.ui.add([colorPicker], "bottom-right");
-
-        // Widgets
-        //////////////////////////////////////////
+        view.ui.add(layerList, "bottom-right");
       });
     </script>
   </head>
