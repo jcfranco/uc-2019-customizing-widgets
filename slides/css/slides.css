@@ -1,0 +1,7 @@
+.reveal code {
+  color: orange;
+}
+
+.reveal section img.plain {
+  background: transparent;
+}

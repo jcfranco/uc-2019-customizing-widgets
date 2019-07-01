@@ -35,14 +35,12 @@ TODO: BLOCK THEME WARNING
 
 # Customization Approaches
 
-- Customizing a theme <!-- .element: class="fragment" data-fragment-index="1" -->
-- Customizing a widget view <!-- .element: class="fragment" data-fragment-index="2" -->
+- Customizing a theme
+- Customizing a widget view
 
 ---
 
 TODO: CONTINUE SLIDE
-
-![continue]()
 
 ---
 
@@ -51,7 +49,6 @@ TODO: CONTINUE SLIDE
 <h1>Act I</h1>
 
 TODO: IMAGE
-![Act 1]()
 
 <h2>Theming</h2>
 
@@ -59,7 +56,9 @@ TODO: IMAGE
 
 # Act I: Theming
 
-## Why Theme? <!-- .element: class="fragment" data-fragment-index="0" -->
+## Why Theme?
+
+<!-- .element: class="fragment" data-fragment-index="0" -->
 
 - Match branding.
 - Match the map.
@@ -96,18 +95,18 @@ Using a theme requires only a slight update to the CSS path.
 
 We use
 
-![Sass](./img/sass-white.png)
+<img alt="Sass" src="./img/sass-white.png" class="plain" />
 
 ### to create our CSS.
 
-<img src="img/nodejs-new-pantone-black.png" height="80" style="margin-left:10px; margin-right: 10px;"/><!-- .element: class="fragment" data-fragment-index="1" -->
-<img src="img/grunt.svg" height="80" style="margin-left:10px; margin-right: 10px;"/><!-- .element: class="fragment" data-fragment-index="1" -->
+<img src="img/nodejs-new-pantone-black.png" height="80" style="margin-left:10px; margin-right: 10px;"/><!-- .element: class="fragment plain" data-fragment-index="1" -->
+<img src="img/grunt.svg" height="80" style="margin-left:10px; margin-right: 10px;"/><!-- .element: class="fragment plain" data-fragment-index="1" -->
 
-<small><a href="https://nodejs.org/">nodejs.org</a> | <a href="https://gruntjs.com/">gruntjs.com</a></small><!-- .element: class="fragment" data-fragment-index="1" -->
+<small><a href="https://nodejs.org/">nodejs.org</a> | <a href="https://gruntjs.com/">gruntjs.com</a></small><!-- .element: class="fragment plain" data-fragment-index="1" -->
 
 ---
 
-![Sass](./img/sass-white.png)
+<img alt="Sass" src="./img/sass-white.png" class="plain" />
 
 ### is a powerful scripting language for compiling CSS.
 
@@ -242,13 +241,13 @@ $button-color                     : #ff1515;
 
 ...then magic!<!-- .element: class="fragment" data-fragment-index="1" -->
 
-<img src="./img/8bit/JSAPI-8bit_Magic.png" style="margin: 0;"/><!-- .element: class="fragment" data-fragment-index="1" -->
+<img src="./img/8bit/JSAPI-8bit_Magic.png" /><!-- .element: class="fragment plain" data-fragment-index="1" -->
 
 ---
 
 # Magic
 
-<img src="./img/8bit/JSAPI-8bit_Magic.png" style="margin: 0;"/>
+<img src="./img/8bit/JSAPI-8bit_Magic.png" class="plain"/>
 
 Using `$button-color` we "automagically" set the hover color.
 
