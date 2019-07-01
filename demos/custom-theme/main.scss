@@ -5,8 +5,12 @@
 //  Main Colors Vars
 $font-color: #fff;
 $interactive-font-color: #ffed00;
-$background-color: #000;
-$button-color: #e3000b;
+$background-color: #e3000b;
+$button-color: #000;
+$border-color: #000;
+
+$border-color--active: #ffed00;
+$background-color--active: #000;
 
 // Font
 @font-face {
@@ -17,8 +21,12 @@ $button-color: #e3000b;
   font-style: normal;
 }
 
+* {
+  text-transform: uppercase;
+}
+
 // Font
-$font-family: $font-title, "Legothick", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family: "Legothick", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
 // Text
 $line-height: 1.3em !default;
