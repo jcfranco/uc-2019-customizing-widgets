@@ -44,8 +44,6 @@ TODO: CONTINUE SLIDE
 
 ![continue]()
 
-<!-- .slide: data-background="img/upside-down-bg.jpg" data-background-size="cover"  -->
-
 ---
 
 <!-- Presenter: Matt -->
@@ -56,8 +54,6 @@ TODO: IMAGE
 ![Act 1]()
 
 <h2>Theming</h2>
-
-<!-- .slide: data-background="img/upside-down-bg.jpg" data-background-size="cover"  -->
 
 ---
 
@@ -86,7 +82,7 @@ Using a theme requires only a slight update to the CSS path.
 
 ---
 
-<!-- .slide: data-background="img/demo-time.png" data-background-size="cover" style="padding-top: 35%;" -->
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" data-background-size="cover" style="padding-top: 35%;" -->
 
 **Theme Switcher**
 
@@ -270,13 +266,10 @@ $button-color--hover: darken($button-color, 10%) !default;
 Stranger Things Theme
 
 TODO: IMAGE
-[![Custom Theme](./img/custom-theme.png)](../demos/custom-theme/)
-
-**DISCLAIMER**: `theme has low contrast`
 
 ---
 
-<!-- .slide: data-background="img/demo-time.png" data-background-size="cover" style="padding-top: 35%;" -->
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" data-background-size="cover" style="padding-top: 35%;" -->
 
 **Custom Theme**
 
@@ -298,20 +291,12 @@ TODO: IMAGE
 <!-- NEXT ACT  A -->
 <h1>End Act I</h1>
 
-![Act 1](./img/8bit/JSAPI-8bit_Act-End.png)
-
-<!-- .slide: data-background="img/upside-down-bg.jpg" data-background-size="cover"  -->
-
 ---
 
 <!-- NEXT ACT  B -->
 <h1>Act II</h1>
 
-![Act 2](./img/8bit/JSAPI-8bit_Act-Start.png)
-
 <h2>Views</h2>
-
-<!-- .slide: data-background="img/upside-down-bg.jpg" data-background-size="cover"  -->
 
 ---
 
@@ -395,8 +380,6 @@ API Exploration
 
 Custom Stranger Things Compass
 
-[![Custom Theme](./img/custom-compass.png)](../demos/custom-compass-complete/)
-
 ---
 
 # Act II: Compass Interface
@@ -413,7 +396,7 @@ interface CustomCompass {
 
 ---
 
-<!-- .slide: data-background="img/demo-time.png" data-background-size="cover" style="padding-top: 35%;" -->
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" data-background-size="cover" style="padding-top: 35%;" -->
 
 Recreating a view
 
@@ -437,10 +420,6 @@ What have we learned about Widget Views?
 <!-- NEXT ACT  A -->
 <h1>End Act II</h1>
 
-![Act 2](./img/8bit/JSAPI-8bit_Act-End.png)
-
-<!-- .slide: data-background="img/upside-down-bg.jpg" data-background-size="cover"  -->
-
 ---
 
 <!-- Presenter: Franco -->
@@ -448,11 +427,7 @@ What have we learned about Widget Views?
 <!-- NEXT ACT  B -->
 <h1>Act III</h1>
 
-![Act 3](./img/8bit/JSAPI-8bit_Act-Start.png)
-
 <h2>Extending a View</h2>
-
-<!-- .slide: data-background="img/upside-down-bg.jpg" data-background-size="cover"  -->
 
 ---
 
@@ -467,7 +442,7 @@ What have we learned about Widget Views?
 
 ---
 
-<!-- .slide: data-background="img/demo-time.png" data-background-size="cover" style="padding-top: 35%;" -->
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" data-background-size="cover" style="padding-top: 35%;" -->
 
 **CustomCompass (Revisited)**
 
@@ -481,7 +456,7 @@ What have we learned about Widget Views?
 |
 [Steps](../demos/custom-basemap-gallery-start/STEPS.md)
 
-<!-- .slide: data-background="img/demo-time.png" data-background-size="cover" style="padding-top: 35%;" -->
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" data-background-size="cover" style="padding-top: 35%;" -->
 
 ---
 
@@ -500,18 +475,10 @@ What have we learned about Widget Views?
 <!-- NEXT ACT A -->
 <h1>End Act III</h1>
 
-![Act 3](./img/8bit/JSAPI-8bit_Act-End.png)
-
-<!-- .slide: data-background="img/upside-down-bg.jpg" data-background-size="cover"  -->
-
 ---
 
 <!-- NEXT ACT B -->
 <h1>The End?</h1>
-
-<img class="floating" src="./img/8bit/JSAPI-8bit_End.png" height="400" style="margin-left:10px; margin-right: 10px;"/>
-
-<!-- .slide: data-background="img/upside-down-bg.jpg" data-background-size="cover"  -->
 
 ---
 
