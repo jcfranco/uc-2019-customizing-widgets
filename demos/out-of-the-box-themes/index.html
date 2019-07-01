@@ -28,14 +28,13 @@
       require([
         "esri/WebScene",
         "esri/views/SceneView",
-        "esri/widgets/Compass",
-        "esri/widgets/Home",
-        "esri/widgets/BasemapGallery",
         "esri/widgets/Search",
-        "esri/widgets/Expand",
         "esri/widgets/Legend",
-        "esri/widgets/LayerList"
-      ], function(WebScene, SceneView, Compass, Home, BasemapGallery, Search, Expand, Legend, LayerList) {
+        "esri/widgets/Compass",
+        "esri/widgets/Expand",
+        "esri/widgets/LayerList",
+        "esri/widgets/Home"
+      ], function(WebScene, SceneView, Search, Legend, Compass, Expand, LayerList, Home) {
         map = new WebScene({ portalItem: { id: "2b721b9e7bef45e2b7ff78a398a33acc" } });
 
         view = new SceneView({
@@ -61,10 +60,35 @@
         });
         view.ui.add(home, "top-left");
 
+        var compass = new Compass({
+          view: view
+        });
+        view.ui.add(compass, "top-left");
+
         var search = new Search({
           view: view
         });
         view.ui.add(search, "top-right");
+
+        var legend = new Legend({
+          view: view
+        });
+        var legendExpand = new Expand({
+          view: view,
+          content: legend,
+          expanded: true
+        });
+        view.ui.add(legendExpand, "bottom-left");
+
+        var layerList = new LayerList({
+          view: view
+        });
+        var layerListExpand = new Expand({
+          view: view,
+          content: layerList,
+          expanded: true
+        });
+        view.ui.add(layerListExpand, "top-left");
 
         var selectMenuNode = document.createElement("select");
         view.ui.add(selectMenuNode, "top-right");
@@ -80,26 +104,6 @@
           optionNode.textContent = theme;
           selectMenuNode.appendChild(optionNode);
         });
-
-        var bmg = new BasemapGallery({
-          view: view
-        });
-        var bmg_expand = new Expand({
-          expanded: true,
-          view: view,
-          content: bmg
-        });
-        view.ui.add(bmg_expand, "bottom-left");
-
-        var legend = new Legend({
-          view: view
-        });
-        view.ui.add(legend, "bottom-right");
-
-        var layerList = new LayerList({
-          view: view
-        });
-        view.ui.add(layerList, "bottom-right");
       });
     </script>
   </head>
