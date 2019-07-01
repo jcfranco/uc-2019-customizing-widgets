@@ -1,4 +1,4 @@
-<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/devsummit/bg-1.png" data-background-size="cover" -->
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-1.png" data-background-size="cover" -->
 <!-- Presenter: Franco -->
 
 # ArcGIS API for JavaScript: Customizing Widgets
@@ -11,7 +11,7 @@
 
 # Agenda
 
-TODO BLOCK THEME WARNING
+TODO: BLOCK THEME WARNING
 
 ---
 
@@ -525,11 +525,7 @@ What have we learned about Widget Views?
 
 ## Recommended Sessions
 
-- [Intro to TypeScript](https://devsummit2019.schedule.esri.com/schedule/996246169) Wed 1:30pm
-- [JavaScript for Geographers](https://devsummit2019.schedule.esri.com/schedule/237520120) Wed 2:30 pm
-- [Using TypeScript with ArcGIS API for JavaScript](https://devsummit2019.schedule.esri.com/schedule/1194566856) Wed 2:30 pm
-- [Accessible Web Mapping Apps](https://devsummit2019.schedule.esri.com/schedule/672667633) Thu 9am
-- [Building Your own Widget with ArcGIS API for JavaScript](https://devsummit2019.schedule.esri.com/schedule/822290096) Thu 4pm
+TODO: ADD
 
 ---
 
@@ -543,7 +539,7 @@ What have we learned about Widget Views?
 ---
 
 <!-- **please rate us** -->
-<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/devsummit/bg-rating.png" data-background-size="cover" -->
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-5.png" data-background-size="cover" -->
 
 ---
 
@@ -559,4 +555,4 @@ What have we learned about Widget Views?
 
 ---
 
-<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/devsummit/bg-esri.png" data-background-size="cover" -->
+TODO: END SLIDE
