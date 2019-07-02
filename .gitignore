@@ -1,4 +1,5 @@
+.cache/
 .DS_Store
-/node_modules/
-node_modules/**/*
-/**/app/*.js.map
+.idea/
+node_modules/
+*.js.map
