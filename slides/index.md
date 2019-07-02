@@ -11,12 +11,6 @@
 
 # Agenda
 
-TODO: BLOCK THEME WARNING
-
----
-
-# Agenda
-
 - What can be customized
 - Customization approaches with demos
 - Q & A
@@ -42,13 +36,15 @@ TODO: BLOCK THEME WARNING
 
 <img alt="Sass" src="./img/8bit/8-BIT-continue.png" class="plain" />
 
+TODO: Block theme warning
+
 ---
 
 <!-- Presenter: Matt -->
 
 <h1>Act I: Theming</h1>
 
-TODO: IMAGE
+TODO: Screenshot image
 
 ---
 
@@ -274,7 +270,7 @@ $button-color--hover: darken($button-color, 10%) !default;
 
 ## Lets make a theme
 
-TODO: IMAGE
+TODO: screenshot image
 
 ---
 
@@ -505,7 +501,8 @@ What have we learned about Widget Views?
 
 ## Recommended Sessions
 
-TODO: ADD
+- [ArcGIS API for JavaScript: The Road Ahead](https://userconference2019.schedule.esri.com/schedule/1105824428)
+- [Building Web Apps with the ArcGIS API for JavaScript](https://userconference2019.schedule.esri.com/schedule/1991692024)
 
 ---
 
@@ -533,4 +530,4 @@ TODO: ADD
 
 ---
 
-TODO: END SLIDE
+Thank You!
