@@ -18,6 +18,16 @@
         margin: 0;
         padding: 0;
       }
+
+      .esri-theme-select {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        width: 200px;
+        font-size: 24px;
+        margin-left: -100px;
+        z-index: 1;
+      }
     </style>
 
     <script src="https://js.arcgis.com/4.12"></script>
@@ -41,19 +51,6 @@
           container: "sceneDiv",
           map: map
         });
-
-        var themes = [
-          "light",
-          "dark",
-          "light-blue",
-          "dark-blue",
-          "light-green",
-          "dark-green",
-          "light-purple",
-          "dark-purple",
-          "light-red",
-          "dark-red"
-        ];
 
         var home = new Home({
           view: view
@@ -90,25 +87,38 @@
         });
         view.ui.add(layerListExpand, "top-left");
 
-        var selectMenuNode = document.createElement("select");
-        view.ui.add(selectMenuNode, "top-right");
-
-        selectMenuNode.onchange = function() {
-          var themeLinkNode = document.getElementById("themeLink");
-          themeLinkNode.href = "https://js.arcgis.com/4.12/esri/themes/" + selectMenuNode.value + "/main.css";
-        };
-
+        var themes = [
+          "light",
+          "dark",
+          "light-blue",
+          "dark-blue",
+          "light-green",
+          "dark-green",
+          "light-purple",
+          "dark-purple",
+          "light-red",
+          "dark-red"
+        ];
+        var selectMenuNode = document.getElementById("esri-theme-select");
+        var selectMenuGroup = document.createElement("optgroup");
+        selectMenuGroup.label = "Themes";
+        selectMenuNode.appendChild(selectMenuGroup);
         themes.forEach(function(theme) {
           var optionNode = document.createElement("option");
           optionNode.value = theme;
           optionNode.textContent = theme;
-          selectMenuNode.appendChild(optionNode);
+          selectMenuGroup.appendChild(optionNode);
         });
+        selectMenuNode.onchange = function() {
+          var themeLinkNode = document.getElementById("themeLink");
+          themeLinkNode.href = "https://js.arcgis.com/4.12/esri/themes/" + selectMenuNode.value + "/main.css";
+        };
       });
     </script>
   </head>
 
   <body>
+    <select class="esri-theme-select" id="esri-theme-select"></select>
     <div id="sceneDiv"></div>
   </body>
 </html>
