@@ -15,6 +15,7 @@
         height: 100%;
         width: 100%;
       }
+
       .logo {
         box-sizing: border-box;
         font-family: "lego_brixregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -48,7 +49,7 @@
     <script>
       require([
         "esri/views/MapView",
-        "esri/Map",
+        "esri/WebMap",
         "esri/widgets/Search",
         "esri/widgets/Legend",
         "esri/widgets/Compass",
@@ -61,7 +62,7 @@
         "layers/palette"
       ], function(
         MapView,
-        Map,
+        WebMap,
         Search,
         Legend,
         Compass,
@@ -85,15 +86,19 @@
           ]
         });
 
-        var map = new Map({
-          basemap: basemap
+        var map = new WebMap({
+          portalItem: {
+            id: "cbf0bfa6e27440b49f6482a0fe73505c"
+          }
+        });
+
+        map.when(function() {
+          map.basemap = basemap;
         });
 
         var view = new MapView({
           map: map,
           container: "viewDiv",
-          center: [-100, 40],
-          scale: 50000000,
           constraints: {
             minScale: 50000000,
             snapToZoom: false
