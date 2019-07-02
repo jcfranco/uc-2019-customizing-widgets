@@ -486,11 +486,6 @@ What have we learned about Widget Views?
 
 ---
 
-<!-- NEXT ACT B -->
-<h1>The End?</h1>
-
----
-
 # Conclusion
 
 - Themed by changin colors, sizing, etc.
@@ -530,4 +525,4 @@ What have we learned about Widget Views?
 
 ---
 
-Thank You!
+# Thank You!
