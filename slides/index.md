@@ -137,7 +137,7 @@ We use
 
 ---
 
-### Step 1
+## Step 1
 
 Clone the theme utility repo
 
@@ -149,7 +149,7 @@ git clone https://github.com/jcfranco/jsapi-styles.git
 
 ---
 
-### Step 2
+## Step 2
 
 `npm install`
 
@@ -162,19 +162,19 @@ git clone https://github.com/jcfranco/jsapi-styles.git
 
 ---
 
-### Step 3
+## Step 3
 
-Edit your theme<br/>
+#### Edit your theme
+
 `sass/my-theme/main.scss`
 
-Optionally, edit your app<br/>
-`preview/index.html`
+#### Optionally, edit your app <!-- .element: class="fragment" data-fragment-index="1" -->
 
-<!-- .element: class="fragment" data-fragment-index="1" -->
+`preview/index.html` <!-- .element: class="fragment" data-fragment-index="1" -->
 
 ---
 
-### Step 4
+## Step 4
 
 Host your stylesheet and any relevant assets
 
@@ -189,7 +189,7 @@ Link your stylesheet in your app
 
 ## Theming Goals
 
-Theme Smart
+### Theme Smart
 
 - Avoid adding additional CSS selectors
 - Instead, use Sass to your advantage
@@ -243,9 +243,7 @@ $button-color                     : #ff1515;
 
 ---
 
-## Magic
-
-<img src="img/bricks/magic.gif" width="300" class="plain"/>
+## Magic\*
 
 Using `$button-color` we "automagically" set the hover color.
 
