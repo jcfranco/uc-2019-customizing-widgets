@@ -477,4 +477,6 @@ What have we learned about Widget Views?
 
 ---
 
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" data-background-size="cover" -->
+
 ## Thank You!
