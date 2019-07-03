@@ -34,9 +34,9 @@
 
 ---
 
-<img alt="Sass" src="./img/bricks/continue.png" class="plain" />
+<!-- .slide: data-background="img/bricks/blocky.png" data-background-size="cover"  -->
 
-TODO: Block theme warning
+<img alt="Sass" src="./img/bricks/continue.png" class="plain" />
 
 ---
 
@@ -270,7 +270,7 @@ $button-color--hover: darken($button-color, 10%) !default;
 
 ## Lets make a theme
 
-TODO: screenshot image
+![Custom Theme](img/bricks/custom-theme.png)
 
 ---
 
