@@ -44,7 +44,7 @@
 
 <h1>Act I: Theming</h1>
 
-TODO: Screenshot image
+![out of the box themes](img/bricks/out-of-box-themes.png)
 
 ---
 
@@ -82,6 +82,8 @@ Using a theme requires only a slight update to the CSS path.
 **Theme Switcher**
 
 [Out-of-the-box themes](../demos/out-of-the-box-themes/)
+
+![out of the box theme dark](img/bricks/out-of-box-theme-dark.png)
 
 ---
 
