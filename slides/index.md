@@ -490,7 +490,7 @@ What have we learned about Widget Views?
 
 ##### For example
 
-> 🤔 Where can I find the slides/source?
+🤔 Where can I find the slides/source?
 
 👉 [esriurl.com/customwidgetsuc2019](http://esriurl.com/customwidgetsuc2019) 👈
 
