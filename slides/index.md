@@ -245,14 +245,19 @@ $button-color                     : #ff1515;
 
 ## Magic\*
 
-Using `$button-color` we "automagically" set the hover color.
+Using `$button-color` we "magically" set the hover color by default.
 
 ```scss
 $button-color--hover: darken($button-color, 10%) !default;
 // ...etc
 ```
 
-<a href="https://developers.arcgis.com/javascript/latest/guide/styling/index.html#sassy-widgets" target="_blank" class="external">API Styling Guide</a>
+---
+
+## Theming Documentation
+
+- <a href="https://developers.arcgis.com/javascript/latest/guide/styling/index.html#sassy-widgets" target="_blank" class="external">API Styling Guide</a>
+- <a href="https://github.com/jcfranco/jsapi-styles/blob/master/README.md" target="_blank" class="external">Style Utility Readme</a>
 
 ---
 
@@ -266,7 +271,8 @@ $button-color--hover: darken($button-color, 10%) !default;
 
 ## Demo: Custom Theme
 
-<a href="../../jsapi-styles/preview/" target="_blank" class="external">Preview Start</a> | <a href="../demos/custom-theme/STEPS.md" target="_blank" class="external">Demo Steps</a>
+- <a href="../../jsapi-styles/preview/" target="_blank" class="external">Preview Start</a>
+- <a href="../demos/custom-theme/STEPS.md" target="_blank" class="external">Demo Steps</a>
 
 ---
 
@@ -389,7 +395,9 @@ interface CustomCompass {
 
 ## Demo: Customizing a widget view
 
-[Demo Start](../demos/custom-compass-start/) | [Demo Steps](../demos/custom-compass-start/STEPS.md) | [Compass Doc](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Compass.html)
+- [Demo Start](../demos/custom-compass-start/)
+- [Demo Steps](../demos/custom-compass-start/STEPS.md)
+- [Compass Doc](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Compass.html)
 
 ---
 
