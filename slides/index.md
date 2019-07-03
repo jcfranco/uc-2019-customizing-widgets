@@ -239,13 +239,13 @@ $button-color                     : #ff1515;
 
 ...then magic!<!-- .element: class="fragment" data-fragment-index="1" -->
 
-<img src="./img/8bit/JSAPI-8bit_Magic.png" /><!-- .element: class="fragment plain" data-fragment-index="1" -->
+<img src="img/bricks/magic.gif" width="300" /><!-- .element: class="fragment plain" data-fragment-index="1" -->
 
 ---
 
 ## Magic
 
-<img src="./img/8bit/JSAPI-8bit_Magic.png" class="plain"/>
+<img src="img/bricks/magic.gif" width="300" class="plain"/>
 
 Using `$button-color` we "automagically" set the hover color.
 
