@@ -5,9 +5,8 @@
 
 ## Customizing Widgets
 
-### Matt Driscoll – [@driskull](https://twitter.com/driskull)
-
-### JC Franco – [@arfncode](https://twitter.com/arfncode)
+- Matt Driscoll – [@driskull](https://twitter.com/driskull)
+- JC Franco – [@arfncode](https://twitter.com/arfncode)
 
 ---
 
@@ -26,6 +25,7 @@
 - Altering presentation of a widget
   - Custom UI
 - Adding additional functionality
+  - Moar!
 
 ---
 
@@ -57,7 +57,7 @@
 - Match branding.
 - Match the map.
 - Contrast with the map.
-- User-specific (e.g. bigger buttons)
+- User-specific requirements (e.g. bigger buttons)
 
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
@@ -79,9 +79,9 @@ Using a theme requires only a slight update to the CSS path.
 
 ## Demo: Theme Switcher
 
-<a href="../demos/out-of-the-box-themes/" target="_blank">Out-of-the-box themes</a>
-
 <a href="../demos/out-of-the-box-themes/" target="_blank"><img src="img/bricks/out-of-box-theme-dark.png" width="40%" /></a>
+
+<a href="../demos/out-of-the-box-themes/" target="_blank">Out-of-the-box themes</a>
 
 ---
 
@@ -198,9 +198,9 @@ Theme Smart
 
 Let's look at how the core theme is structured
 
-- Color <span>: `color.scss`</span><!-- .element: class="fragment" data-fragment-index="1" -->
-- Size <span>: `sizes.scss`</span><!-- .element: class="fragment" data-fragment-index="1" -->
-- Type <span>: `type.scss`</span><!-- .element: class="fragment" data-fragment-index="1" -->
+- Color<span>: `color.scss`</span><!-- .element: class="fragment" data-fragment-index="1" -->
+- Size<span>: `sizes.scss`</span><!-- .element: class="fragment" data-fragment-index="1" -->
+- Type<span>: `type.scss`</span><!-- .element: class="fragment" data-fragment-index="1" -->
 
 ---
 
