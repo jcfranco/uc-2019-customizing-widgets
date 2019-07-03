@@ -21,11 +21,11 @@
 ## Customizing Widgets
 
 - Theming
-  - Changing styles: colors, sizing, font, etc.
+  - Custom styles (colors, sizing, font...)
 - Altering presentation of a widget
   - Custom UI
 - Adding additional functionality
-  - Moar!
+  - Custom logic
 
 ---
 
@@ -33,6 +33,7 @@
 
 - Customizing a theme
 - Customizing a widget view
+- Customizing functionality
 
 ---
 
@@ -54,9 +55,9 @@
 
 ## Why Theme?
 
-- Match branding.
-- Match the map.
-- Contrast with the map.
+- Match branding
+- Match the map
+- Contrast with the map
 - User-specific requirements (e.g. bigger buttons)
 
 <!-- .element: class="fragment" data-fragment-index="1" -->
@@ -65,7 +66,7 @@
 
 ## Esri Themes
 
-10 themes are provided out-of-the-box:
+`10` themes are provided out-of-the-box:
 
 Using a theme requires only a slight update to the CSS path.
 
@@ -81,7 +82,7 @@ Using a theme requires only a slight update to the CSS path.
 
 <a href="../demos/out-of-the-box-themes/" target="_blank"><img src="img/bricks/out-of-box-theme-dark.png" width="40%" /></a>
 
-<a href="../demos/out-of-the-box-themes/" target="_blank">Out-of-the-box themes</a>
+<a href="../demos/out-of-the-box-themes/" target="_blank" class="external">Out-of-the-box themes</a>
 
 ---
 
@@ -98,7 +99,7 @@ We use
 <a href="https://nodejs.org/" target="_blank"><img src="img/nodejs-new-pantone-black.png" class="plain" height="80" style="margin-left:10px; margin-right: 10px;"/></a><!-- .element: class="fragment" data-fragment-index="1" -->
 <a href="https://gruntjs.com/" target="_blank"><img src="img/grunt.svg" height="80" class="plain" style="margin-left:10px; margin-right: 10px;"/></a><!-- .element: class="fragment" data-fragment-index="1" -->
 
-<small><a href="https://sass-lang.com/" target="_blank">sass-lang.com</a> | <a href="https://nodejs.org/" target="_blank">nodejs.org</a> | <a href="https://gruntjs.com/" target="_blank">gruntjs.com</a></small><!-- .element: class="fragment plain" data-fragment-index="1" -->
+<small><a href="https://sass-lang.com/" target="_blank" class="external">sass-lang.com</a> | <a href="https://nodejs.org/" target="_blank" class="external">nodejs.org</a> | <a href="https://gruntjs.com/" target="_blank" class="external">gruntjs.com</a></small><!-- .element: class="fragment plain" data-fragment-index="1" -->
 
 ---
 
@@ -106,9 +107,9 @@ We use
 
 ### is a powerful scripting language for compiling CSS.
 
-- It's modular.
-- It's DRY.
-- It makes theming easy.
+- Modular
+- DRY
+- Makes theming easy
 
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
@@ -116,10 +117,10 @@ We use
 
 ## Theming Steps
 
-1. Get our theme utility.
-1. Use the utility.
-1. Customize your theme.
-1. Host your CSS file.
+1. Get theme utility
+1. Use the utility
+1. Customize your theme
+1. Host your CSS file
 
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
@@ -127,7 +128,7 @@ We use
 
 ## Theming Setup
 
-1. Clone the utility `jsapi-styles.git` ([repo](https://github.com/jcfranco/jsapi-styles))
+1. Clone the <a href="https://github.com/jcfranco/jsapi-styles" class="external" target="_blank">theme utility</a> `jsapi-styles.git`
 1. Run `npm install`
 1. Edit <span style="font-weight:bold;">`sass/my-theme/main.scss`</span>.
 1. See <span style="font-weight:bold;">`dist/my-theme/main.css`</span>.
@@ -138,10 +139,11 @@ We use
 
 ### Step 1
 
-Clone the repo.<br/>
-<a href="https://github.com/jcfranco/jsapi-styles" target="_blank">https://github.com/jcfranco/jsapi-styles</a>
+Clone the theme utility repo
 
-```
+<a href="https://github.com/jcfranco/jsapi-styles" target="_blank" class="external">github.com/jcfranco/jsapi-styles</a>
+
+```bash
 git clone https://github.com/jcfranco/jsapi-styles.git
 ```
 
@@ -151,10 +153,10 @@ git clone https://github.com/jcfranco/jsapi-styles.git
 
 `npm install`
 
-- Installs the necessary bits.
-- Creates a sample theme directory.
-- Compiles the CSS from the SCSS.
-- Spins up a preview in your default browser.
+- Installs the necessary bits
+- Creates a sample theme directory
+- Compiles the CSS from the SCSS
+- Spins up a preview in your default browser
 
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
@@ -162,10 +164,10 @@ git clone https://github.com/jcfranco/jsapi-styles.git
 
 ### Step 3
 
-Edit your theme.<br/>
+Edit your theme<br/>
 `sass/my-theme/main.scss`
 
-Optionally, edit your app.<br/>
+Optionally, edit your app<br/>
 `preview/index.html`
 
 <!-- .element: class="fragment" data-fragment-index="1" -->
@@ -174,9 +176,9 @@ Optionally, edit your app.<br/>
 
 ### Step 4
 
-Host your stylesheet and any relevant assets.
+Host your stylesheet and any relevant assets
 
-Link your stylesheet in your app.
+Link your stylesheet in your app
 
 ```html
 <!-- In your app: -->
@@ -252,7 +254,7 @@ $button-color--hover: darken($button-color, 10%) !default;
 // ...etc
 ```
 
-<a href="https://developers.arcgis.com/javascript/latest/guide/styling/index.html#sassy-widgets" target="_blank">API Styling Guide</a>
+<a href="https://developers.arcgis.com/javascript/latest/guide/styling/index.html#sassy-widgets" target="_blank" class="external">API Styling Guide</a>
 
 ---
 
@@ -266,7 +268,7 @@ $button-color--hover: darken($button-color, 10%) !default;
 
 ## Demo: Custom Theme
 
-[Preview Start](../../jsapi-styles/preview/) | [Demo Steps](../demos/custom-theme/STEPS.md)
+<a href="../../jsapi-styles/preview/" target="_blank" class="external">Preview Start</a> | <a href="../demos/custom-theme/STEPS.md" target="_blank" class="external">Demo Steps</a>
 
 ---
 
@@ -283,7 +285,7 @@ $button-color--hover: darken($button-color, 10%) !default;
 
 <!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-3.png" data-background-size="cover" -->
 
-## Act II: Widget Composition
+## Act II: Customizing a widget view
 
 ---
 
@@ -365,7 +367,7 @@ API Exploration
 
 ---
 
-## Recreating a view
+## Customizing a widget view
 
 TODO: demo
 
@@ -387,7 +389,7 @@ interface CustomCompass {
 
 <!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" data-background-size="cover" -->
 
-## Demo: Recreating a view
+## Demo: Customizing a widget view
 
 [Demo Start](../demos/custom-compass-start/) | [Demo Steps](../demos/custom-compass-start/STEPS.md) | [Compass Doc](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Compass.html)
 
@@ -406,46 +408,19 @@ What have we learned about Widget Views?
 
 ---
 
-## Act III: Extending
+## Act III: Customizing widget functionality
 
 <!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-3.png" data-background-size="cover" -->
 
 ---
 
-## Extending
-
-- Why?
-  - Reusable
-  - Same ecosystem
-- How?
-  - Leveraging `esri/widgets/Widget`
-  - API Widgets
-
----
-
-## Demo:
-
-<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" data-background-size="cover" -->
-
-**CustomCompass (Revisited)**
-
-[Steps](../demos/custom-compass-extended-start/STEPS.md)
-
----
-
-## Demo:
-
-**CustomBasemapGallery**
-
-[Demo](../demos/custom-basemap-gallery-complete/)
-|
-[Steps](../demos/custom-basemap-gallery-start/STEPS.md)
+## Demo: Customizing functionality
 
 <!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" data-background-size="cover" -->
 
 ---
 
-## Extending a View Recap
+## Customizing functionality Recap
 
 - Reusable <!-- .element: class="fragment" data-fragment-index="1" -->
   - View/ViewModel <!-- .element: class="fragment" data-fragment-index="1" -->

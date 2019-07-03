@@ -5,3 +5,11 @@
 .reveal section img.plain {
   background: transparent;
 }
+
+.reveal .external:after {
+  content: "\f08e";
+  font-family: FontAwesome;
+  margin-left: 5px;
+  vertical-align: super;
+  font-size: 0.5em;
+}
