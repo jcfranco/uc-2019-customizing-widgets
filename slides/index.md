@@ -9,7 +9,7 @@
 
 ---
 
-# Agenda
+## Agenda
 
 - What can be customized
 - Customization approaches with demos
@@ -17,7 +17,7 @@
 
 ---
 
-# Customizing Widgets
+## Customizing Widgets
 
 - Theming
   - Changing styles: colors, sizing, font, etc.
@@ -27,7 +27,7 @@
 
 ---
 
-# Customization Approaches
+## Customization Approaches
 
 - Customizing a theme
 - Customizing a widget view
@@ -40,19 +40,17 @@
 
 ---
 
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-3.png" data-background-size="cover" -->
+
 <!-- Presenter: Matt -->
 
-<h1>Act I: Theming</h1>
+## Act I: Theming
 
 ![out of the box themes](img/bricks/out-of-box-themes.png)
 
 ---
 
-# Act I: Theming
-
 ## Why Theme?
-
-<!-- .element: class="fragment" data-fragment-index="0" -->
 
 - Match branding.
 - Match the map.
@@ -62,8 +60,6 @@
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
 ---
-
-# Act I: Theming
 
 ## Esri Themes
 
@@ -79,15 +75,13 @@ Using a theme requires only a slight update to the CSS path.
 
 <!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" data-background-size="cover" -->
 
-**Theme Switcher**
+## Theme Switcher
 
-[Out-of-the-box themes](../demos/out-of-the-box-themes/)
+<a href="../demos/out-of-the-box-themes/" target="_blank">Out-of-the-box themes</a>
 
-![out of the box theme dark](img/bricks/out-of-box-theme-dark.png)
+<a href="../demos/out-of-the-box-themes/" target="_blank"><img src="img/bricks/out-of-box-theme-dark.png" /></a>
 
 ---
-
-# Act I: Theming
 
 ## Theming Technology
 
@@ -95,14 +89,14 @@ Using a theme requires only a slight update to the CSS path.
 
 We use
 
-<img alt="Sass" src="./img/sass-white.png" class="plain" />
+<a href="https://sass-lang.com/" target="_blank"><img alt="Sass" src="./img/sass-white.png" class="plain" /></a>
 
 ### to create our CSS.
 
-<img src="img/nodejs-new-pantone-black.png" height="80" style="margin-left:10px; margin-right: 10px;"/><!-- .element: class="fragment plain" data-fragment-index="1" -->
-<img src="img/grunt.svg" height="80" style="margin-left:10px; margin-right: 10px;"/><!-- .element: class="fragment plain" data-fragment-index="1" -->
+<a href="https://nodejs.org/" target="_blank"><img src="img/nodejs-new-pantone-black.png" class="plain" height="80" style="margin-left:10px; margin-right: 10px;"/></a><!-- .element: class="fragment" data-fragment-index="1" -->
+<a href="https://gruntjs.com/" target="_blank"><img src="img/grunt.svg" height="80" class="plain" style="margin-left:10px; margin-right: 10px;"/></a><!-- .element: class="fragment" data-fragment-index="1" -->
 
-<small><a href="https://nodejs.org/">nodejs.org</a> | <a href="https://gruntjs.com/">gruntjs.com</a></small><!-- .element: class="fragment plain" data-fragment-index="1" -->
+<small><a href="https://sass-lang.com/" target="_blank">sass-lang.com</a> | <a href="https://nodejs.org/" target="_blank">nodejs.org</a> | <a href="https://gruntjs.com/" target="_blank">gruntjs.com</a></small><!-- .element: class="fragment plain" data-fragment-index="1" -->
 
 ---
 
@@ -118,8 +112,6 @@ We use
 
 ---
 
-# Act I: Theming
-
 ## Theming Steps
 
 1.  Get our theme utility.
@@ -130,8 +122,6 @@ We use
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
 ---
-
-# Act I: Theming
 
 ## Theming Setup
 
@@ -144,7 +134,7 @@ We use
 
 ---
 
-# Step 1
+### Step 1
 
 Clone the repo.<br/>
 <a href="https://github.com/jcfranco/jsapi-styles" target="_blank">https://github.com/jcfranco/jsapi-styles</a>
@@ -155,7 +145,7 @@ git clone https://github.com/jcfranco/jsapi-styles.git
 
 ---
 
-# Step 2
+### Step 2
 
 `npm install`
 
@@ -168,7 +158,7 @@ git clone https://github.com/jcfranco/jsapi-styles.git
 
 ---
 
-# Step 3
+### Step 3
 
 Edit your theme.<br/>
 `sass/my-theme/main.scss`
@@ -180,7 +170,7 @@ Optionally, edit your app.<br/>
 
 ---
 
-# Step 4
+### Step 4
 
 Host your stylesheet and any relevant assets.
 
@@ -193,8 +183,6 @@ Link your stylesheet in your app.
 
 ---
 
-# Act I: Theming
-
 ## Theming Goals
 
 Theme Smart
@@ -203,8 +191,6 @@ Theme Smart
 - Instead, use Sass to your advantage
 
 ---
-
-# Act I: Theming
 
 ## Theme Structure
 
@@ -216,7 +202,7 @@ Let's look at how the core theme is structured
 
 ---
 
-# Theme Structure
+## Theme Structure
 
 ### Default
 
@@ -236,7 +222,7 @@ But wait...there's more!<!-- .element: class="fragment" data-fragment-index="1" 
 
 ---
 
-# Theme Structure
+## Theme Structure
 
 Override the core color variables...
 
@@ -253,7 +239,7 @@ $button-color                     : #ff1515;
 
 ---
 
-# Magic
+## Magic
 
 <img src="./img/8bit/JSAPI-8bit_Magic.png" class="plain"/>
 
@@ -264,11 +250,9 @@ $button-color--hover: darken($button-color, 10%) !default;
 // ...etc
 ```
 
-[API Styling Guide](https://developers.arcgis.com/javascript/latest/guide/styling/index.html#sassy-widgets)
+<a href="https://developers.arcgis.com/javascript/latest/guide/styling/index.html#sassy-widgets" target="_blank">API Styling Guide</a>
 
 ---
-
-# Act I: Theming
 
 ## Lets make a theme
 
@@ -278,15 +262,13 @@ $button-color--hover: darken($button-color, 10%) !default;
 
 <!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" data-background-size="cover"  -->
 
-**Custom Theme**
+## Custom Theme
 
-[Preview](../../jsapi-styles/preview/) | [Demo Steps](../demos/custom-theme/STEPS.md)
+[Preview Start](../../jsapi-styles/preview/) | [Demo Steps](../demos/custom-theme/STEPS.md)
 
 ---
 
-# Act I: Theming
-
-## Recap
+## Theming Recap
 
 - Use the utility for easy theming.
 - Theme structure
@@ -297,19 +279,13 @@ $button-color--hover: darken($button-color, 10%) !default;
 
 ---
 
-<!-- NEXT ACT  A -->
-<h1>End Act I</h1>
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-3.png" data-background-size="cover" -->
+
+## Act II: Widget Composition
 
 ---
 
-<!-- NEXT ACT  B -->
-<h1>Act II</h1>
-
-<h2>Views</h2>
-
----
-
-# Act II: Widget Composition
+## Widget Composition
 
 Widgets are composed of Views & ViewModels
 
@@ -322,7 +298,7 @@ Widgets are composed of Views & ViewModels
 
 ---
 
-# Act II: TypeScript
+## TypeScript
 
 - Widgets written in TypeScript (Typed JavaScript)
 - JS of the future, now <!-- .element: class="fragment" data-fragment-index="1" -->
@@ -334,7 +310,7 @@ Widgets are composed of Views & ViewModels
 
 ---
 
-# Act II: Views
+## Views
 
 - Presentation of the Widget
 - Uses ViewModel APIs to render the UI
@@ -345,7 +321,7 @@ Widgets are composed of Views & ViewModels
 
 ---
 
-# Act II: Widget Class
+## Widget Class
 
 `esri/widgets/Widget`
 
@@ -356,7 +332,7 @@ Widgets are composed of Views & ViewModels
 
 ---
 
-# Act II: Widget Lifecycle
+## Widget Lifecycle
 
 - `constructor`
 - `postInitialize`
@@ -367,7 +343,7 @@ Widgets are composed of Views & ViewModels
 
 ---
 
-# Act II: `render`
+## `render`
 
 - Defines UI
 - Reacts to state
@@ -378,7 +354,7 @@ Widgets are composed of Views & ViewModels
 
 ---
 
-# Act II: Working with Views
+## Working with Views
 
 API Exploration
 
@@ -387,13 +363,13 @@ API Exploration
 
 ---
 
-# Act II: Recreating a view
+## Recreating a view
 
 TODO: demo
 
 ---
 
-# Act II: Compass Interface
+## Compass Interface
 
 CustomCompass widget: Same interface as the default Compass widget
 
@@ -415,7 +391,7 @@ Recreating a view
 
 ---
 
-# Act II: Views Recap
+## Views Recap
 
 What have we learned about Widget Views?
 
@@ -428,21 +404,13 @@ What have we learned about Widget Views?
 
 ---
 
-<!-- NEXT ACT  A -->
-<h1>End Act II</h1>
+## Act III: Extending
+
+<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-3.png" data-background-size="cover" -->
 
 ---
 
-<!-- Presenter: Franco -->
-
-<!-- NEXT ACT  B -->
-<h1>Act III</h1>
-
-<h2>Extending a View</h2>
-
----
-
-# Act III: Extending
+## Extending
 
 - Why?
   - Reusable
@@ -471,7 +439,7 @@ What have we learned about Widget Views?
 
 ---
 
-# Act III: Extending a View Recap
+## Extending a View Recap
 
 - Reusable <!-- .element: class="fragment" data-fragment-index="1" -->
   - View/ViewModel <!-- .element: class="fragment" data-fragment-index="1" -->
@@ -480,11 +448,6 @@ What have we learned about Widget Views?
 - Extended existing widget <!-- .element: class="fragment" data-fragment-index="3" -->
   - Lifecycle <!-- .element: class="fragment" data-fragment-index="3" -->
   - TypeScript <!-- .element: class="fragment" data-fragment-index="3" -->
-
----
-
-<!-- NEXT ACT A -->
-<h1>End Act III</h1>
 
 ---
 
@@ -517,7 +480,7 @@ What have we learned about Widget Views?
 
 ---
 
-# Questions?
+## Questions?
 
 ##### For example
 
@@ -527,4 +490,4 @@ What have we learned about Widget Views?
 
 ---
 
-# Thank You!
+## Thank You!
