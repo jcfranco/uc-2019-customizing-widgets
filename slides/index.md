@@ -1,7 +1,9 @@
 <!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-1.png" data-background-size="cover" -->
 <!-- Presenter: Franco -->
 
-# ArcGIS API for JavaScript: Customizing Widgets
+# ArcGIS API for JavaScript
+
+## Customizing Widgets
 
 ### Matt Driscoll – [@driskull](https://twitter.com/driskull)
 
@@ -46,7 +48,7 @@
 
 ## Act I: Theming
 
-![out of the box themes](img/bricks/out-of-box-themes.png)
+<img src="img/bricks/out-of-box-themes.png" width="40%" />
 
 ---
 
@@ -75,11 +77,11 @@ Using a theme requires only a slight update to the CSS path.
 
 <!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" data-background-size="cover" -->
 
-## Theme Switcher
+## Demo: Theme Switcher
 
 <a href="../demos/out-of-the-box-themes/" target="_blank">Out-of-the-box themes</a>
 
-<a href="../demos/out-of-the-box-themes/" target="_blank"><img src="img/bricks/out-of-box-theme-dark.png" /></a>
+<a href="../demos/out-of-the-box-themes/" target="_blank"><img src="img/bricks/out-of-box-theme-dark.png" width="40%" /></a>
 
 ---
 
@@ -114,10 +116,10 @@ We use
 
 ## Theming Steps
 
-1.  Get our theme utility.
-1.  Use the utility.
-1.  Customize your theme.
-1.  Host your CSS file.
+1. Get our theme utility.
+1. Use the utility.
+1. Customize your theme.
+1. Host your CSS file.
 
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
@@ -125,10 +127,10 @@ We use
 
 ## Theming Setup
 
-1.  Clone the utility `jsapi-styles.git` ([repo](https://github.com/jcfranco/jsapi-styles))
-1.  Run `npm install`
-1.  Edit <span style="font-weight:bold;">`sass/my-theme/main.scss`</span>.
-1.  See <span style="font-weight:bold;">`dist/my-theme/main.css`</span>.
+1. Clone the utility `jsapi-styles.git` ([repo](https://github.com/jcfranco/jsapi-styles))
+1. Run `npm install`
+1. Edit <span style="font-weight:bold;">`sass/my-theme/main.scss`</span>.
+1. See <span style="font-weight:bold;">`dist/my-theme/main.css`</span>.
 
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
@@ -256,13 +258,13 @@ $button-color--hover: darken($button-color, 10%) !default;
 
 ## Lets make a theme
 
-![Custom Theme](img/bricks/custom-theme.png)
+<img src="img/bricks/custom-theme.png" width="40%" />
 
 ---
 
 <!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" data-background-size="cover"  -->
 
-## Custom Theme
+## Demo: Custom Theme
 
 [Preview Start](../../jsapi-styles/preview/) | [Demo Steps](../demos/custom-theme/STEPS.md)
 
@@ -385,7 +387,7 @@ interface CustomCompass {
 
 <!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" data-background-size="cover" -->
 
-Recreating a view
+## Demo: Recreating a view
 
 [Demo Start](../demos/custom-compass-start/) | [Demo Steps](../demos/custom-compass-start/STEPS.md) | [Compass Doc](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Compass.html)
 
@@ -421,6 +423,8 @@ What have we learned about Widget Views?
 
 ---
 
+## Demo:
+
 <!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" data-background-size="cover" -->
 
 **CustomCompass (Revisited)**
@@ -428,6 +432,8 @@ What have we learned about Widget Views?
 [Steps](../demos/custom-compass-extended-start/STEPS.md)
 
 ---
+
+## Demo:
 
 **CustomBasemapGallery**
 
