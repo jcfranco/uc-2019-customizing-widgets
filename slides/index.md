@@ -34,7 +34,7 @@
 
 ---
 
-<img alt="Sass" src="./img/8bit/8-BIT-continue.png" class="plain" />
+<img alt="Sass" src="./img/bricks/continue.png" class="plain" />
 
 TODO: Block theme warning
 
