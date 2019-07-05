@@ -29,7 +29,7 @@ Replace all of the code in the file with the following...
 
 ```scss
 /*
-  Theme: Blocky McBrick Theme
+  Theme: Blocky McBricks Theme
 */
 
 //  Main Colors Vars

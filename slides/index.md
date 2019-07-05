@@ -267,7 +267,19 @@ $button-color--hover: darken($button-color, 10%) !default;
 
 ## Lets make a theme
 
-"Plastic block company"
+Brand colors
+
+<!-- .element: class="fragment" data-fragment-index="1" -->
+
+<img src="img/bricks/brand-colors.png" width="30%" />
+
+<!-- .element: class="fragment" data-fragment-index="1" -->
+
+---
+
+## Custom Theme
+
+Blocky McBricks: Fine miniture plastic bricks
 
 <img src="img/bricks/custom-theme.png" width="40%" />
 
