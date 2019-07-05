@@ -66,12 +66,12 @@
 
 ## Esri Themes
 
-`10` themes are provided out-of-the-box:
+**10** themes are provided out-of-the-box:
 
 Using a theme requires only a slight update to the CSS path.
 
 ```html
-<link rel="stylesheet" href="https://js.arcgis.com/4.12/esri/themes/<theme-name>/main.css" />
+<link href="//js.arcgis.com/4.12/esri/themes/<theme-name>/main.css" />
 ```
 
 ---
@@ -130,8 +130,8 @@ We use
 
 1. Clone the <a href="https://github.com/jcfranco/jsapi-styles" class="external" target="_blank">theme utility</a> `jsapi-styles.git`
 1. Run `npm install`
-1. Edit <span style="font-weight:bold;">`sass/my-theme/main.scss`</span>.
-1. See <span style="font-weight:bold;">`dist/my-theme/main.css`</span>.
+1. Edit <span style="font-weight:bold;">`sass/my-theme/main.scss`</span>
+1. See <span style="font-weight:bold;">`dist/my-theme/main.css`</span>
 
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
@@ -188,7 +188,7 @@ Link your stylesheet in your app
 
 ```html
 <!-- In your app: -->
-<link href="path/to/your/theme/main.css" rel="stylesheet" />
+<link href="path/to/your/theme/main.css" />
 ```
 
 <!-- .element: class="fragment" data-fragment-index="1" -->
@@ -390,34 +390,16 @@ Widgets are composed of Views & ViewModels
 
 ## Working with Views
 
-TODO: UPDATE LINKS FOR BOOKMARKS/BASEMAPGALLERY
-
 API Exploration
 
-- [Doc](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Compass.html)
-- [Sample](https://developers.arcgis.com/javascript/latest/sample-code/widgets-compass-2d/index.html)
+- [Bookmarks Doc](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html)
+- [Bookmarks Sample](https://developers.arcgis.com/javascript/latest/sample-code/widgets-bookmarks/index.html)
 
 ---
 
 ## Customizing a widget view
 
-TODO: DEMO
-
----
-
-## Compass Interface
-
-// TODO: UPDATE INTERFACE WITH PROPER WIDGET
-
-CustomCompass widget: Same interface as the default Compass widget
-
-```ts
-interface CustomCompass {
-  view: View; //MapView | SceneView
-  viewModel: CompassViewModel;
-  reset(): void; // CompassViewModel.reset()
-}
-```
+TODO: OVERVIEW
 
 ---
 
@@ -427,9 +409,8 @@ interface CustomCompass {
 
 // TODO: STEPS
 
-- [Demo Start](../demos/custom-compass-start/)
-- [Demo Steps](../demos/custom-compass-start/STEPS.md)
-- [Compass Doc](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Compass.html)
+- [Demo Start]()
+- [Demo Steps]()
 
 ---
 
@@ -452,9 +433,20 @@ What have we learned about Widget Views?
 
 ---
 
-## Demo: Customizing functionality
+## Customizing functionality
+
+TODO: OVERVIEW
+
+---
 
 <!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" data-background-size="cover" -->
+
+## Demo: Customizing functionality
+
+// TODO: STEPS
+
+- [Demo Start]()
+- [Demo Steps]()
 
 ---
 
@@ -494,7 +486,6 @@ What have we learned about Widget Views?
 
 ---
 
-<!-- **please rate us** -->
 <!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-5.png" data-background-size="cover" -->
 
 ---
