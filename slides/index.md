@@ -191,8 +191,12 @@ Link your stylesheet in your app
 
 ### Theme Smart
 
+<!-- .element: class="fragment" data-fragment-index="1" -->
+
 - Avoid adding additional CSS selectors
 - Instead, use Sass to your advantage
+
+<!-- .element: class="fragment" data-fragment-index="1" -->
 
 ---
 
@@ -219,7 +223,7 @@ Any value assignment overrides the `!default` value.
 
 ```scss
 // Inside sass/my-theme/main.scss
-$background-color: #1e0707;
+$background-color: #e3000b;
 ```
 
 But wait...there's more!<!-- .element: class="fragment" data-fragment-index="1" -->
@@ -231,10 +235,10 @@ But wait...there's more!<!-- .element: class="fragment" data-fragment-index="1" 
 Override the core color variables...
 
 ```scss
-$font-color                       : #3a5fe5;
-$interactive-font-color           : #ff1515;
-$background-color                 : #1e0707
-$button-color                     : #ff1515;
+$font-color: #fff;
+$interactive-font-color: #fff;
+$background-color: #e3000b;
+$button-color: #fff;
 ```
 
 ...then magic!<!-- .element: class="fragment" data-fragment-index="1" -->
@@ -262,6 +266,8 @@ $button-color--hover: darken($button-color, 10%) !default;
 ---
 
 ## Lets make a theme
+
+"Plastic block company"
 
 <img src="img/bricks/custom-theme.png" width="40%" />
 

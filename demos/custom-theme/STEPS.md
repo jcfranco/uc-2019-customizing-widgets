@@ -1,4 +1,4 @@
-Theming Steps
+# Theming Steps
 
 ## Styles directory structure
 
@@ -19,184 +19,148 @@ View the following files:
 - `/sass/base/_type_.scss`
 - ...etc
 
-## Update our preview app
-
-Lets update our preview app to show more widgets.
-
-Copy the following to `/jsapi-styles/preview/index.html`.
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="initial-scale=1,maximum-scale=1,user-scalable=no"
-    />
-    <title>Custom theme preview</title>
-    <style>
-      html,
-      body,
-      #viewDiv {
-        padding: 0;
-        margin: 0;
-        height: 100%;
-        width: 100%;
-      }
-    </style>
-    <link rel="stylesheet" href="../dist/my-theme/main.css" />
-    <script src="https://js.arcgis.com/4.11/"></script>
-    <script>
-      require([
-        "esri/views/MapView",
-        "esri/WebMap",
-        "esri/widgets/Search",
-        "esri/widgets/Legend",
-        "esri/widgets/Compass",
-        "esri/widgets/Expand",
-        "esri/widgets/Home",
-        "esri/widgets/LayerList"
-      ], function(
-        MapView,
-        WebMap,
-        Search,
-        Legend,
-        Compass,
-        Expand,
-        Home,
-        LayerList
-      ) {
-        var webmap = new WebMap({
-          portalItem: {
-            id: "e7a5e0c315cf4ed4a017c8eaabb247c7"
-          }
-        });
-
-        var view = new MapView({
-          map: webmap,
-          container: "viewDiv"
-        });
-
-        var home = new Home({
-          view: view
-        });
-
-        view.ui.add(home, "top-left");
-
-        var compass = new Compass({
-          view: view
-        });
-
-        view.ui.add(compass, "top-left");
-
-        var search = new Search({
-          view: view
-        });
-
-        view.ui.add(search, "top-right");
-
-        var legend = new Legend({
-          view: view
-        });
-
-        var legendExpand = new Expand({
-          group: "top-left",
-          view: view,
-          content: legend
-        });
-
-        view.ui.add(legendExpand, "top-left");
-
-        var layerList = new LayerList({
-          view: view
-        });
-
-        var layerListExpand = new Expand({
-          group: "top-left",
-          view: view,
-          content: layerList
-        });
-
-        view.ui.add(layerListExpand, "top-left");
-
-        view.when(function() {
-          search.search("Jackson, Georgia");
-        });
-      });
-    </script>
-  </head>
-
-  <body>
-    <div id="viewDiv"></div>
-  </body>
-</html>
-```
-
-## Reload Preview Page
-
-Reload preview page to see more widgets.
-
 ## Lets start editing our theme
 
 Open `/jsapi-styles/sass/my-theme/main.scss`.
 
 ## Lets update our theme code
 
-Replace the code with the following
+Replace all of the code in the file with the following...
 
 ```scss
 /*
-  Theme: My Theme
+  Theme: Blocky McBrick Theme
 */
 
-$font-color: #3a5fe5;
-// $interactive-font-color: #ff1515;
-// $background-color: #1e0707;
-// $button-color: #ff1515;
+//  Main Colors Vars
+$font-color: #fff;
+// $interactive-font-color: #fff;
+// $background-color: #e3000b;
 
 // Keep this import last
 @import "../base/core";
 ```
 
-## Uncomment the following to see changes
+## Uncomment statements for changes
+
+Uncomment the following CSS statements to see changes.
 
 ```scss
-$interactive-font-color: #ff1515;
-$background-color: #1e0707;
-$button-color: #ff1515;
+$interactive-font-color: #fff;
+$background-color: #e3000b;
 ```
 
-## Change Font
+## Hover states
+
+Add hover state variables.
+
+```scss
+// Hover
+$interactive-font-color--hover: #000;
+$background-color--hover: #ffed00;
+$border-color--hover: #e3000b;
+```
+
+## Active states
+
+Add active state variables.
+
+```scss
+// Active
+$border-color--active: #e3000b;
+$background-color--active: #ffed00;
+```
+
+## Borders
+
+Add variables for border color and radius.
+
+```scss
+// border
+$border-radius: none;
+$border-color: #000;
+$border-color--subtle: #fff;
+```
+
+## Buttons
+
+Add variables for button colors.
+
+```scss
+// buttons
+$button-color: #fff;
+$button-color--hover: #ffed00;
+$button-color--inverse: #ffed00;
+```
+
+## Font
+
+Add a custom webfont to use for the theme and set the `font-family` SCSS variable.
 
 ```scss
 // Font
-$font-title: "BenguiatITCW01-BoldCn";
 @font-face {
-  font-family: $font-title;
-  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/161676/BenguiatProITC-BoldCond.eot") format("embedded-opentype"),
-    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/161676/BenguiatProITC-BoldCond.woff") format("woff"),
-    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/161676/BenguiatProITC-BoldCond.ttf") format("truetype");
+  font-family: "lego_brixregular";
+  src: url("../font/lego_brix-webfont.woff2") format("woff2"), url("../font/lego_brix-webfont.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
-  font-weight: bold;
 }
 
 // Font
-$font-family: $font-title, "Avenir Next W00", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family: "lego_brixregular", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 ```
 
-## Change Font sizing
+## Font weight
+
+Modify the font weight.
 
 ```scss
-$line-height: 1.3em;
-$base-font-size: 18px;
+// Font weight
+$font-weight: 600 !default;
+$font-weight__heading: 600 !default;
+$font-weight__bold: 600 !default;
 ```
 
-## Modify Button Sizes
+## Font sizing
+
+Modify the font size.
 
 ```scss
-$button-width: 42px;
-$button-height: 42px;
+// Font sizing
+$line-height: 1.3em !default;
+$base-font-size: 18px !default;
+```
+
+## Button Sizes
+
+Increase the button size.
+
+```scss
+// buttons
+$button-width: 48px !default;
+$button-height: 48px !default;
+```
+
+## Open `_mixins.scss` to change box shadow
+
+Remove box shadow and add a border instead.
+
+```scss
+@mixin boxShadow($arguments) {
+  border: 3px solid #000;
+}
+
+@mixin defaultBoxShadow() {
+  border: 3px solid #000;
+}
+
+@mixin borderBoxShadow($color: $border-color) {
+  border: 3px solid #000;
+}
+
+@mixin cardBoxShadow($color: $border-color) {
+  border: 3px solid #000;
+}
 ```
 
 ## Open a widget base file and modify
