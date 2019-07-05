@@ -464,7 +464,7 @@ TODO: OVERVIEW
 
 # Conclusion
 
-- Themed by changin colors, sizing, etc.
+- Themed by changing colors, sizing, etc.
 - Altered presentation (Custom UI)
 - Added additional functionality
 
