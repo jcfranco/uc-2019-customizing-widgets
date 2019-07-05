@@ -13,5 +13,8 @@
     "dojo-typings": "1.11.9",
     "legofy": "git+https://github.com/jcfranco/Legofy.git#add-multiple-output-targets",
     "typescript": "3.5.2"
+  },
+  "dependencies": {
+    "tslib": "^1.10.0"
   }
 }
