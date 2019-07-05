@@ -143,9 +143,13 @@ Clone the theme utility repo
 
 <a href="https://github.com/jcfranco/jsapi-styles" target="_blank" class="external">github.com/jcfranco/jsapi-styles</a>
 
+<!-- .element: class="fragment" data-fragment-index="1" -->
+
 ```bash
 git clone https://github.com/jcfranco/jsapi-styles.git
 ```
+
+<!-- .element: class="fragment" data-fragment-index="1" -->
 
 ---
 
@@ -180,10 +184,14 @@ Host your stylesheet and any relevant assets
 
 Link your stylesheet in your app
 
+<!-- .element: class="fragment" data-fragment-index="1" -->
+
 ```html
 <!-- In your app: -->
 <link href="path/to/your/theme/main.css" rel="stylesheet" />
 ```
+
+<!-- .element: class="fragment" data-fragment-index="1" -->
 
 ---
 
