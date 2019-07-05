@@ -370,20 +370,24 @@ Widgets are composed of Views & ViewModels
 
 ## Working with Views
 
+TODO: UPDATE LINKS FOR BOOKMARKS/BASEMAPGALLERY
+
 API Exploration
 
-- [Compass Doc](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Compass.html)
-- [Compass Sample](https://developers.arcgis.com/javascript/latest/sample-code/widgets-compass-2d/index.html)
+- [Doc](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Compass.html)
+- [Sample](https://developers.arcgis.com/javascript/latest/sample-code/widgets-compass-2d/index.html)
 
 ---
 
 ## Customizing a widget view
 
-TODO: demo
+TODO: DEMO
 
 ---
 
 ## Compass Interface
+
+// TODO: UPDATE INTERFACE WITH PROPER WIDGET
 
 CustomCompass widget: Same interface as the default Compass widget
 
@@ -400,6 +404,8 @@ interface CustomCompass {
 <!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" data-background-size="cover" -->
 
 ## Demo: Customizing a widget view
+
+// TODO: STEPS
 
 - [Demo Start](../demos/custom-compass-start/)
 - [Demo Steps](../demos/custom-compass-start/STEPS.md)
