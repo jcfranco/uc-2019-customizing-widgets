@@ -24,8 +24,6 @@
   - Custom styles (colors, sizing, font...)
 - Altering presentation of a widget
   - Custom UI
-- Adding additional functionality
-  - Custom logic
 
 ---
 
@@ -33,7 +31,6 @@
 
 - Customizing a theme
 - Customizing a widget view
-- Customizing functionality
 
 ---
 
@@ -47,7 +44,7 @@
 
 <!-- Presenter: Matt -->
 
-## Act I: Theming
+## Part I: Theming
 
 <img src="img/bricks/out-of-box-themes.png" width="40%" />
 
@@ -287,7 +284,7 @@ Brand colors
 
 ## Custom Theme
 
-Blocky McBricks: Fine miniture plastic bricks
+Blocky McBricks: Fine miniature plastic bricks
 
 <img src="img/bricks/custom-theme.png" width="40%" />
 
@@ -315,32 +312,19 @@ Blocky McBricks: Fine miniture plastic bricks
 
 <!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-3.png" data-background-size="cover" -->
 
-## Act II: Customizing a widget view
+## Part II: Customizing widget views
 
 ---
 
-## Widget Composition
+## Widget = View + ViewModel
 
-Widgets are composed of Views & ViewModels
+Presentation is separate from business logic <!-- .element: class="fragment" data-fragment-index="1" --> 
 
-- Logic is separate from presentation
-- Reusable
-- UI replacement
-- Framework integration
+- Reusable <!-- .element: class="fragment" data-fragment-index="1" -->
+- UI replacement <!-- .element: class="fragment" data-fragment-index="1" -->
+- Framework integration <!-- .element: class="fragment" data-fragment-index="1" -->
 
 <!-- .element: class="fragment" data-fragment-index="1" -->
-
----
-
-## TypeScript
-
-- Widgets written in TypeScript (Typed JavaScript)
-- JS of the future, now <!-- .element: class="fragment" data-fragment-index="1" -->
-- IDE support <!-- .element: class="fragment" data-fragment-index="2" -->
-  - Visual Studio
-  - WebStorm
-  - Sublime
-  - and more!
 
 ---
 
@@ -355,7 +339,7 @@ Widgets are composed of Views & ViewModels
 
 ---
 
-## Widget Class
+## Widget (Base) Class
 
 `esri/widgets/Widget`
 
@@ -381,8 +365,8 @@ Widgets are composed of Views & ViewModels
 
 - Defines UI
 - Reacts to state
-- Uses JSX
-- VDOM
+- JSX
+- Virtual DOM
 
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
@@ -399,7 +383,11 @@ API Exploration
 
 ## Customizing a widget view
 
-TODO: OVERVIEW
+Brickified™ Bookmarks widget
+
+<img alt="Customizing view demo (before)" src="./img/bricks/demo-customizing-view-before.png" class="plain" height="500" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img alt="Customizing view demo (after)" src="./img/bricks/demo-customizing-view-after.png" class="plain" height="500" />
 
 ---
 
@@ -407,66 +395,27 @@ TODO: OVERVIEW
 
 ## Demo: Customizing a widget view
 
-// TODO: STEPS
-
-- [Demo Start]()
-- [Demo Steps]()
+- [Demo Start](../demos/custom-widget-views/)
+- [Demo Steps](https://github.com/jcfranco/uc-2019-customizing-widgets/tree/master/demos/custom-widget-views)
 
 ---
 
-## Views Recap
+## Customizing a widget view recap
 
-What have we learned about Widget Views?
-
-- Face of the widget
-- Present ViewModel logic
-- ViewModel separation allows framework integration or custom views
-- Downloadable on API docs
-
-<!-- .element: class="fragment" data-fragment-index="1" -->
-
----
-
-## Act III: Customizing widget functionality
-
-<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-3.png" data-background-size="cover" -->
-
----
-
-## Customizing functionality
-
-TODO: OVERVIEW
-
----
-
-<!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" data-background-size="cover" -->
-
-## Demo: Customizing functionality
-
-// TODO: STEPS
-
-- [Demo Start]()
-- [Demo Steps]()
-
----
-
-## Customizing functionality Recap
-
-- Reusable <!-- .element: class="fragment" data-fragment-index="1" -->
-  - View/ViewModel <!-- .element: class="fragment" data-fragment-index="1" -->
-- Same ecosystem <!-- .element: class="fragment" data-fragment-index="2" -->
-  - No extra libraries <!-- .element: class="fragment" data-fragment-index="2" -->
+- Widget = View + ViewModel <!-- .element: class="fragment" data-fragment-index="1" -->
+  - Reusable <!-- .element: class="fragment" data-fragment-index="1" -->
+  - UI replacement <!-- .element: class="fragment" data-fragment-index="1" -->
+  - Framework integration <!-- .element: class="fragment" data-fragment-index="1" -->
 - Extended existing widget <!-- .element: class="fragment" data-fragment-index="3" -->
   - Lifecycle <!-- .element: class="fragment" data-fragment-index="3" -->
-  - TypeScript <!-- .element: class="fragment" data-fragment-index="3" -->
+  - Custom rendering <!-- .element: class="fragment" data-fragment-index="3" -->
 
 ---
 
 # Conclusion
 
 - Themed by changing colors, sizing, etc.
-- Altered presentation (Custom UI)
-- Added additional functionality
+- Altered presentation (custom UI)
 
 ---
 
@@ -503,3 +452,8 @@ TODO: OVERVIEW
 <!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" data-background-size="cover" -->
 
 ## Thank You!
+
+> Ideas for next User Conference related to web development 💡
+>
+> `jsapi_pm@esri.com`
+

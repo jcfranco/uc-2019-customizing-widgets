@@ -1,6 +1,6 @@
-import BlockyBasemapToggle = require("./widgets/BlockyBasemapToggle");
-import BlockyBasemapGallery = require("./widgets/BlockyBasemapGallery");
-import BlockyBookmarks = require("./widgets/BlockyBookmarks");
+import BasemapToggle = require("esri/widgets/BasemapToggle");
+import BasemapGallery = require("esri/widgets/BasemapGallery");
+import Bookmarks = require("esri/widgets/Bookmarks");
 import Expand = require("esri/widgets/Expand");
 
 import Map = require("esri/Map");
@@ -22,23 +22,27 @@ const view = new MapView({
 
 // widget setup
 
-const basemapToggle = new BlockyBasemapToggle({
+const group = "demo";
+
+const basemapGalleryExpand = new Expand({
+  group,
+  view,
+  content: new BasemapGallery({ view })
+});
+
+const bookmarksExpand = new Expand({
+  group,
+  view,
+  content: new Bookmarks({ view, bookmarks: bookmarksJSON })
+});
+
+const basemapToggle = new BasemapToggle({
   view,
   nextBasemap: "hybrid"
 });
 
-const basemapGalleryExpand = new Expand({
-  view,
-  content: new BlockyBasemapGallery({ view })
-});
-
-const bookmarksExpand = new Expand({
-  view,
-  content: new BlockyBookmarks({ view, bookmarks: bookmarksJSON })
-});
-
 // add widgets to our map
 
-view.ui.add(basemapToggle, "bottom-right");
 view.ui.add(basemapGalleryExpand, "top-right");
 view.ui.add(bookmarksExpand, "top-right");
+view.ui.add(basemapToggle, "bottom-right");
