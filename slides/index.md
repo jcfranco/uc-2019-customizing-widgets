@@ -352,16 +352,16 @@ Presentation is separate from business logic <!-- .element: class="fragment" dat
 
 ## Widget Lifecycle
 
-- `constructor`
-- `postInitialize`
-- `render`
-- `destroy`
+- `constructor()`
+- `postInitialize()`
+- `render()`
+- `destroy()`
 
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
 ---
 
-## `render`
+## `render()`
 
 - Defines UI
 - Reacts to state
