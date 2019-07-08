@@ -41,11 +41,10 @@
         "esri/views/SceneView",
         "esri/widgets/Search",
         "esri/widgets/Legend",
-        "esri/widgets/Compass",
         "esri/widgets/Expand",
         "esri/widgets/LayerList",
         "esri/widgets/Home"
-      ], function(WebScene, SceneView, Search, Legend, Compass, Expand, LayerList, Home) {
+      ], function(WebScene, SceneView, Search, Legend, Expand, LayerList, Home) {
         map = new WebScene({ portalItem: { id: "2b721b9e7bef45e2b7ff78a398a33acc" } });
 
         view = new SceneView({
@@ -57,11 +56,6 @@
           view: view
         });
         view.ui.add(home, "top-left");
-
-        var compass = new Compass({
-          view: view
-        });
-        view.ui.add(compass, "top-left");
 
         var search = new Search({
           view: view
