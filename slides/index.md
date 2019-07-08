@@ -81,6 +81,15 @@ Using a theme requires only a slight update to the CSS path.
 
 <a href="../demos/out-of-the-box-themes/" target="_blank" class="external">Out-of-the-box themes</a>
 
+--
+
+## Customizing API styling
+
+- API CSS is using [BEM](http://getbem.com/) (Block Element Modifier)
+- You could override our CSS selectors & use higher specificity
+  - Tedious and brittle
+  - We have a better solution
+
 ---
 
 ## Theming Technology
@@ -295,18 +304,19 @@ Blocky McBricks: Fine miniature plastic bricks
 ## Demo: Custom Theme
 
 - <a href="../../jsapi-styles/preview/" target="_blank" class="external">Preview Start</a>
+- <a href="../demos/custom-theme/" target="_blank" class="external">Custom Theme App</a>
 - <a href="../demos/custom-theme/STEPS.md" target="_blank" class="external">Demo Steps</a>
 
 ---
 
 ## Theming Recap
 
-- Use the utility for easy theming.
+- Use Sass & the theme utility to your advantage
 - Theme structure
   - Color
   - Size
   - Typography
-- Use the core and override values.
+- Use the core variables and override their values
 
 ---
 

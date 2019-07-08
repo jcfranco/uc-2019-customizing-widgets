@@ -52,20 +52,14 @@ $background-color: #e3000b;
 
 ## Hover states
 
-Add hover state variables.
+Add hover & active state variables.
 
 ```scss
 // Hover
 $interactive-font-color--hover: #000;
 $background-color--hover: #ffed00;
 $border-color--hover: #e3000b;
-```
 
-## Active states
-
-Add active state variables.
-
-```scss
 // Active
 $border-color--active: #e3000b;
 $background-color--active: #ffed00;
@@ -73,20 +67,14 @@ $background-color--active: #ffed00;
 
 ## Borders
 
-Add variables for border color and radius.
+Add variables for border color, radius and button color.
 
 ```scss
 // border
 $border-radius: none;
 $border-color: #000;
 $border-color--subtle: #fff;
-```
 
-## Buttons
-
-Add variables for button colors.
-
-```scss
 // buttons
 $button-color: #fff;
 $button-color--hover: #ffed00;
@@ -112,20 +100,14 @@ $font-family: "lego_brixregular", "Helvetica Neue", Helvetica, Arial, sans-serif
 
 ## Font weight
 
-Modify the font weight.
+Modify the font weight and font size.
 
 ```scss
 // Font weight
 $font-weight: 600 !default;
 $font-weight__heading: 600 !default;
 $font-weight__bold: 600 !default;
-```
 
-## Font sizing
-
-Modify the font size.
-
-```scss
 // Font sizing
 $line-height: 1.3em !default;
 $base-font-size: 18px !default;
@@ -170,6 +152,10 @@ Open `/jsapi-styles/sass/base/widgets/_Popup.scss`
 Modify the file by removing everything and reload the preview page.
 
 Notice how all the styling layout is gone but theme is still there.
+
+## Copy `dist` folder
+
+Copy the `dist` folder to your app to see full changes with widgets
 
 ## Complete
 
