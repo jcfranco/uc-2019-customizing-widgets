@@ -13,7 +13,8 @@
 ## Agenda
 
 - What can be customized
-- Customization approaches with demos
+- Customization approaches
+- Demos
 - Q & A
 
 ---
@@ -29,8 +30,12 @@
 
 ## Customization Approaches
 
-- Customizing a theme
-- Customizing a widget view
+- Customizing a theme <!-- .element: class="fragment" data-fragment-index="1" -->
+  - Styling
+  - Minor layout adjustments
+- Customizing a widget view <!-- .element: class="fragment" data-fragment-index="2" -->
+  - Altering widget structure
+  - Adding functionality
 
 ---
 
