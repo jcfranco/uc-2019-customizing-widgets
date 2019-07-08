@@ -87,9 +87,10 @@ Using a theme requires only a slight update to the CSS path.
 
 - API CSS is using [BEM](http://getbem.com/) methodology for class names.
   - `.my-widget__menu--open`
-- You could override our CSS selectors & use higher specificity
+- Can override CSS selectors / use higher specificity
+  - [Example](https://developers.arcgis.com/javascript/latest/sample-code/sandbox/index.html?sample=styling-simple-theme)
   - Tedious and brittle
-  - We have a better solution
+  - Better solution...
 
 ---
 
