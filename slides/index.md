@@ -364,8 +364,8 @@ Presentation is separate from business logic <!-- .element: class="fragment" dat
 ## `render()`
 
 - Defines UI
-- Reacts to state
 - JSX
+- Reacts to renderable properties (private or public)
 - Virtual DOM
 
 <!-- .element: class="fragment" data-fragment-index="1" -->
