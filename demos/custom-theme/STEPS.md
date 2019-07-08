@@ -145,6 +145,15 @@ Remove box shadow and add a border instead.
 }
 ```
 
+## Customizine `_Zoom.scss`
+
+Customize the zoom widget only.
+
+```scss
+.esri-zoom {
+    border: 10px solid black;
+```
+
 ## Open a widget base file and modify
 
 Open `/jsapi-styles/sass/base/widgets/_Popup.scss`
