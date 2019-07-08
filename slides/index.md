@@ -81,11 +81,12 @@ Using a theme requires only a slight update to the CSS path.
 
 <a href="../demos/out-of-the-box-themes/" target="_blank" class="external">Out-of-the-box themes</a>
 
---
+---
 
 ## Customizing API styling
 
-- API CSS is using [BEM](http://getbem.com/) (Block Element Modifier)
+- API CSS is using [BEM](http://getbem.com/) methodology for class names.
+  - `.my-widget__menu--open`
 - You could override our CSS selectors & use higher specificity
   - Tedious and brittle
   - We have a better solution
