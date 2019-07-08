@@ -254,7 +254,7 @@ $button-color: #fff;
 
 ## Magic\*
 
-Using `$button-color` we "magically" set the hover color by default.
+Using `$button-color` we can set a default hover color.
 
 ```scss
 $button-color--hover: darken($button-color, 10%) !default;
@@ -318,7 +318,7 @@ Blocky McBricks: Fine miniature plastic bricks
 
 ## Widget = View + ViewModel
 
-Presentation is separate from business logic <!-- .element: class="fragment" data-fragment-index="1" --> 
+Presentation is separate from business logic <!-- .element: class="fragment" data-fragment-index="1" -->
 
 - Reusable <!-- .element: class="fragment" data-fragment-index="1" -->
 - UI replacement <!-- .element: class="fragment" data-fragment-index="1" -->
@@ -456,4 +456,3 @@ Brickified™ Bookmarks widget
 > Ideas for next User Conference related to web development 💡
 >
 > `jsapi_pm@esri.com`
-
