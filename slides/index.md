@@ -30,10 +30,8 @@
 
 - Customizing a theme <!-- .element: class="fragment" data-fragment-index="1" -->
   - Custom styles (colors, sizing, font...)
-  - Minor layout adjustments
 - Customizing a widget view <!-- .element: class="fragment" data-fragment-index="2" -->
   - Custom UI
-  - Custom functionality
 
 ---
 
