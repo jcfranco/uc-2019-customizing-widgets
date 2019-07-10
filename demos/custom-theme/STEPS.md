@@ -50,7 +50,7 @@ $interactive-font-color: #fff;
 $background-color: #e3000b;
 ```
 
-## Hover states
+## Hover & Active states
 
 Add hover & active state variables.
 
@@ -65,7 +65,7 @@ $border-color--active: #e3000b;
 $background-color--active: #ffed00;
 ```
 
-## Borders
+## Borders & Buttons
 
 Add variables for border color, radius and button color.
 
@@ -98,7 +98,7 @@ Add a custom webfont to use for the theme and set the `font-family` SCSS variabl
 $font-family: "lego_brixregular", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 ```
 
-## Font weight
+## Font weight & Sizing
 
 Modify the font weight and font size.
 
@@ -150,8 +150,8 @@ Remove box shadow and add a border instead.
 Customize the zoom widget only.
 
 ```scss
-.esri-zoom {
-    border: 10px solid black;
+.esri-widget--button {
+      background-color: blue;
 ```
 
 ## Open a widget base file and modify
