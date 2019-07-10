@@ -19,7 +19,7 @@
 
 ---
 
-## Widget Presentation
+## Customizing Widgets
 
 - Theme<span>: Styles</span><!-- .element: class="fragment" data-fragment-index="1" -->
 - View<span>: Structure/Functionality</span><!-- .element: class="fragment" data-fragment-index="1" -->
