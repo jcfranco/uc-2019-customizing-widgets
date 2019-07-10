@@ -19,23 +19,21 @@
 
 ---
 
-## Customizing Widgets
+## Widget Composition
 
-- Theming
-  - Custom styles (colors, sizing, font...)
-- Altering presentation of a widget
-  - Custom UI
+- Theme<span>: Styles</span><!-- .element: class="fragment" data-fragment-index="1" -->
+- View<span>: Structure/Functionality</span><!-- .element: class="fragment" data-fragment-index="1" -->
 
 ---
 
 ## Customization Approaches
 
 - Customizing a theme <!-- .element: class="fragment" data-fragment-index="1" -->
-  - Styling
+  - Custom styles (colors, sizing, font...)
   - Minor layout adjustments
 - Customizing a widget view <!-- .element: class="fragment" data-fragment-index="2" -->
-  - Altering widget structure
-  - Adding functionality
+  - Custom UI
+  - Custom functionality
 
 ---
 
@@ -90,12 +88,11 @@ Using a theme requires only a slight update to the CSS path.
 
 ## Customizing API styling
 
-- API CSS is using [BEM](http://getbem.com/) methodology for class names.
+- API CSS is using <a href="http://getbem.com/" target="_blank" class="external">BEM</a> methodology for class names.
   - `.my-widget__menu--open`
 - Can override CSS selectors / use higher specificity
-  - [Example](https://developers.arcgis.com/javascript/latest/sample-code/sandbox/index.html?sample=styling-simple-theme)
-  - Tedious and brittle
-  - Better solution...
+  - <a href="https://developers.arcgis.com/javascript/latest/sample-code/sandbox/index.html?sample=styling-simple-theme" target="_blank" class="external">Sample</a>
+  - Can be tedious/brittle
 
 ---
 
