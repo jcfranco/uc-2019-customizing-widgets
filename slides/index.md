@@ -420,7 +420,7 @@ Brickified™ Bookmarks widget
   - Framework integration <!-- .element: class="fragment" data-fragment-index="1" -->
 - Extended existing widget <!-- .element: class="fragment" data-fragment-index="3" -->
   - Lifecycle <!-- .element: class="fragment" data-fragment-index="3" -->
-  - Custom rendering <!-- .element: class="fragment" data-fragment-index="3" -->
+  - Custom rendering (overrides) <!-- .element: class="fragment" data-fragment-index="3" -->
 
 ---
 
@@ -447,6 +447,16 @@ Brickified™ Bookmarks widget
 
 ---
 
+## Share your apps and suggestions with us
+
+* Cool apps 
+* API feedback 
+* Ideas for the next UC
+
+> `jsapi_pm@esri.com`
+
+---
+
 <!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-5.png" data-background-size="cover" -->
 
 ---
@@ -464,7 +474,3 @@ Brickified™ Bookmarks widget
 <!-- .slide: data-background="../node_modules/esri-reveal.js-templates/img/2019/uc/bg-4.png" data-background-size="cover" -->
 
 ## Thank You!
-
-> Ideas for next User Conference related to web development 💡
->
-> `jsapi_pm@esri.com`
